@@ -10,7 +10,7 @@
     .ticket .logo {
         border-left: 1px solid {{$event->ticket_border_color}};
         border-bottom: 1px solid {{$event->ticket_border_color}};
-
+        background: {{$event->ticket_bg_color}} ;
     }
 </style>
 <div class="ticket">

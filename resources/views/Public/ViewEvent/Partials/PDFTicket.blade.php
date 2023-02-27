@@ -41,6 +41,7 @@
             .ticket .logo {
                 border-left: 1px solid {{$event->ticket_border_color}} !important;
                 border-bottom: 1px solid {{$event->ticket_border_color}} !important;
+                background: {{$event->ticket_bg_color}} !important;
             }
             .ticket .barcode {
                 border-right: 1px solid {{$event->ticket_border_color}} !important;
@@ -58,12 +59,8 @@
                     <div class="ticket">
 
                         <div class='logo'>
-				<img alt="{{$event->organiser->full_logo_path}}" src="data:image/png;base64, {{$image}}" />
-                            @if(isset($images) && count($images) > 0)
-                                @foreach($images as $img)
-                                    <BR><img src="data:image/png;base64, {{$img}}" />
-                                @endforeach
-                            @endif
+                            <img alt="{{$event->organiser->full_logo_path}}"
+                             src="data:image/png;base64, {{$image}}" />
                         </div>
                         <div class="layout_even">
                         <div class="event_details">
