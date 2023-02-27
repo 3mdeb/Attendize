@@ -13,6 +13,9 @@ class IndexController extends Controller
      */
     public function showIndex(Request $request)
     {
-        return redirect()->route('showSelectOrganiser');
+        // Organiser's number, which is shown as the start page
+        $organiser_id = 1;
+
+        return redirect()->route('showOrganiserHome', $organiser_id);
     }
 }
