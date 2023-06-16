@@ -175,7 +175,7 @@ class EventController extends MyBaseController
 
             $img = Image::make($file_full_path);
 
-            $img->resize(800, null, function ($constraint) {
+            $img->resize(1000, null, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
             });
@@ -284,7 +284,7 @@ class EventController extends MyBaseController
 
             $img = Image::make($file_full_path);
 
-            $img->resize(800, null, function ($constraint) {
+            $img->resize(1000, null, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
             });
