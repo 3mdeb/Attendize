@@ -13,13 +13,13 @@
 
         @if ($event->images->count() && $event->event_image_position == 'left')
             <div class="col-md-5">
-                <div class="content event_poster">
+                <div class="content event_poster_side">
                     <img alt="{{$event->title}}" src="{{config('attendize.cdn_url_user_assets').'/'.$event->images->first()['image_path']}}" property="image">
                 </div>
             </div>
         @endif
         @if ($event->images->count() && $event->event_image_position == 'before')
-            <div class="col-md-12" style="margin-bottom: 20px">
+            <div class="col-md-12" style="margin-bottom: 20px; text-align: center;">
                 <div class="content event_poster">
                     <img alt="{{$event->title}}" src="{{config('attendize.cdn_url_user_assets').'/'.$event->images->first()['image_path']}}" property="image">
                 </div>
@@ -34,13 +34,13 @@
 
         @if ($event->images->count() && $event->event_image_position == 'right')
             <div class="col-md-5">
-                <div class="content event_poster">
+                <div class="content event_poster_side">
                     <img alt="{{$event->title}}" src="{{config('attendize.cdn_url_user_assets').'/'.$event->images->first()['image_path']}}" property="image">
                 </div>
             </div>
         @endif
         @if ($event->images->count() && $event->event_image_position == 'after')
-            <div class="col-md-12" style="margin-top: 20px">
+            <div class="col-md-12" style="margin-top: 20px; text-align: center;">
                 <div class="content event_poster">
                     <img alt="{{$event->title}}" src="{{config('attendize.cdn_url_user_assets').'/'.$event->images->first()['image_path']}}" property="image">
                 </div>
