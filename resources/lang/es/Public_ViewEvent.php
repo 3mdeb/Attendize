@@ -7,6 +7,7 @@ return [
     'below_order_details_header'        => '',
     'below_payment_information_header'  => '',
     'below_tickets'                     => 'Selecciona el número de entradas y haz clic en "comprar". En la siguiente pantalla podrás proceder al pago.',
+    'below_tickets_free'                => 'Selecciona el número de entradas y haz clic en "comprar".',
     'booking_fee'                       => 'Gasto de gestión',
     'booking_fees'                      => 'Gastos de gestión',
     'business_address'                  => 'Dirección de la empresa',

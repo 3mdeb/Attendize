@@ -14,6 +14,7 @@ return [
   'below_order_details_header' => '',
   'below_payment_information_header' => '',
   'below_tickets' => 'Selecteer het aantal tickets en klik op "registreer". Op de volgende pagina kunt u betalen.',
+  'below_tickets_free' => 'Selecteer het aantal tickets en klik op "registreer".',
   'booking_fee' => 'Boekingskosten',
   'booking_fees' => 'Boekingskosten',
   // 'business_details' => '',

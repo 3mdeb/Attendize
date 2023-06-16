@@ -14,6 +14,7 @@ return [
     'below_order_details_header' => '',
     'below_payment_information_header' => '',
     'below_tickets' => 'Scegli il numero di biglietti e clicca su "registrati". Nella schermata successiva potrai procedere con il pagamento.',
+    'below_tickets_free' => 'Scegli il numero di biglietti e clicca su "registrati".',
     'booking_fee' => 'Commissione',
     'booking_fees' => 'Commissioni',
     'is_business' => 'Sei un\'azienda?',

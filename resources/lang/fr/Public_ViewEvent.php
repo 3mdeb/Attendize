@@ -18,6 +18,7 @@ return array (
   'below_order_details_header' => '',
   'below_payment_information_header' => '',
   'below_tickets' => 'Sélectionner le nombre de billets et cliquez sur "enregistrer". Sur l\'écran suivant vous pourrez les payer.',
+  'below_tickets_free' => 'Sélectionner le nombre de billets et cliquez sur "enregistrer".',
   'booking_fee' => 'Frais de réservation',
   'booking_fees' => 'Frais de réservation',
   // 'business_details' => ''

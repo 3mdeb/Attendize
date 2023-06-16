@@ -14,6 +14,7 @@ return [
   'below_order_details_header' => 'Uzupełnij dane kupującego i dane osób, dla których kupujesz bilety. Pamiętaj, że na teren imprezy zostaną wpuszczone tylko osoby z ważnymi imiennymi biletami. W razie wątpliwości będziemy wymagać dokumentu celem potwierdzenia tożsamości.',
   'below_payment_information_header' => 'Płatności są bezpieczne i świadczy je zewnętrzna firma międzynarodowa Stripe. Pobierzemy z Twojej karty tylko wskazaną kwotę. Nie przechowujemy danych Twojej karty.',
   'below_tickets' => 'Wybierz liczbę biletów i kliknij rezerwuj. W następnym kroku zapłacisz za bilety.',
+  'below_tickets_free' => 'Wybierz liczbę biletów i kliknij rezerwuj.',
   'booking_fee' => 'Opłata rezerwacyjna',
   'booking_fees' => 'Opłaty rezerwacyjne',
   // 'business_details' => '',

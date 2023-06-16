@@ -7,6 +7,7 @@ return [
     'below_order_details_header'        => '',
     'below_payment_information_header'  => '',
     'below_tickets'                     => 'Выберите количество билетов и нажмите "зарегистрировать".',
+    'below_tickets_free'                => 'Выберите количество билетов и нажмите "зарегистрировать".',
     'booking_fee'                       => 'Комиссия за бронирование',
     'booking_fees'                      => 'Комиссия за бронирование',
     'business_address'                  => 'Адрес организации',

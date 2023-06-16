@@ -113,7 +113,11 @@
                                 @endif
                                 <tr>
                                     <td colspan="3" style="text-align: center">
-                                        @lang("Public_ViewEvent.below_tickets")
+                                        @if(!$is_free_event)
+                                            @lang("Public_ViewEvent.below_tickets")
+                                        @else
+                                            @lang("Public_ViewEvent.below_tickets_free")
+                                        @endif
                                     </td>
                                 </tr>
                                 <tr class="checkout">

@@ -14,6 +14,7 @@ return [
     'below_order_details_header'        => '',
     'below_payment_information_header'  => '',
     'below_tickets'                     => 'チケット数を選択して「購入に進む」をクリックしてください。 次の画面で支払いを行います。',
+    'below_tickets_free'                => 'チケット数を選択して「購入に進む」をクリックしてください。',
     'booking_fee'                       => '予約料',
     'booking_fees'                      => '予約料',
     // 'business_details' => '',

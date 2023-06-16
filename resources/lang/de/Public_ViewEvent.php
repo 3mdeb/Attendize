@@ -14,6 +14,7 @@ return array (
   'below_order_details_header' => '',
   'below_payment_information_header' => '',
   'below_tickets' => 'Wählen Sie die Anzahl der Tickets und klicken sie auf "REGISTRIEREN". Auf der nächsten Seite können Sie diese bezahlen.',
+  'below_tickets_free' => 'Wählen Sie die Anzahl der Tickets und klicken sie auf "REGISTRIEREN".',
   'booking_fee' => 'Buchungsgebühr',
   'booking_fees' => 'Buchungsgebühren',
   // 'business_details' => '',
