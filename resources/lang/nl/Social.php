@@ -17,4 +17,6 @@ return array (
   'social_share_text_help' => 'Deze tekst wordt standaard weergegeven als een gebruiker uw link op social media deelt.',
   'twitter' => 'Twitter',
   'whatsapp' => 'WhatsApp',
+  'element' => 'Element',
+  'mastodon' => 'Mastodon',
 );

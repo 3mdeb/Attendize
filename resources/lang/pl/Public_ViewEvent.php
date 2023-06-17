@@ -8,6 +8,8 @@ return [
   'TICKETS' => 'BILETY',
   'Twitter' => 'Twitter',
   'Whatsapp' => 'Whatsapp',
+  'element' => 'Element',
+  'mastodon' => 'Mastodon',
   'amount' => 'Kwota',
   'at' => 'w miejscu',
   'attendee_cancelled' => 'Anulowany',

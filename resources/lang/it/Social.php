@@ -11,4 +11,6 @@ return [
     'social_share_text_help' => 'Questo è il testo predefinito che sarà mostrato quando un utente condivide il vostro evento sui social network',
     'twitter' => 'Twitter',
     'whatsapp' => 'WhatsApp',
+    'element' => 'Element',
+    'mastodon' => 'Mastodon',
 ];

@@ -17,4 +17,6 @@ return array (
   'social_share_text_help' => 'To jest tekst, który zostanie dodany do wiadomości w trakcie udostępniania wydarzenia.',
   'twitter' => 'Twitter',
   'whatsapp' => 'WhatsApp',
+  'element' => 'Element',
+  'mastodon' => 'Mastodon',
 );

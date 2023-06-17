@@ -8,6 +8,8 @@ return [
     'TICKETS'                           => 'チケット',
     'Twitter'                           => 'Twitter',
     'Whatsapp'                          => 'Whatsapp',
+    'element'                           => 'Element',
+    'mastodon'                          => 'Mastodon',
     'amount'                            => '金額',
     'at'                                => '@',
     'attendee_cancelled'                => 'キャンセル',

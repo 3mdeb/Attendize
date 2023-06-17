@@ -108,6 +108,8 @@ class EventCustomizeController extends MyBaseController
             'social_show_twitter'    => ['boolean'],
             'social_show_linkedin'   => ['boolean'],
             'social_show_email'      => ['boolean'],
+            'social_show_element'    => ['boolean'],
+            'social_show_mastodon'   => ['boolean'],
         ];
 
         $messages = [
@@ -129,6 +131,8 @@ class EventCustomizeController extends MyBaseController
         $event->social_show_twitter = $request->get('social_show_twitter', false);
         $event->social_show_email = $request->get('social_show_email', false);
         $event->social_show_whatsapp = $request->get('social_show_whatsapp', false);
+        $event->social_show_element = $request->get('social_show_element', false);
+        $event->social_show_mastodon = $request->get('social_show_mastodon', false);
         $event->save();
 
         return response()->json([

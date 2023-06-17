@@ -17,4 +17,6 @@ return array (
   'social_share_text_help' => 'C\'est le texte qui sera par défaut partagé lorsqu\'un utilisateur partage votre événement sur les réseaux sociaux',
   'twitter' => 'Twitter',
   'whatsapp' => 'WhatsApp',
+  'element' => 'Element',
+  'mastodon' => 'Mastodon',
 );

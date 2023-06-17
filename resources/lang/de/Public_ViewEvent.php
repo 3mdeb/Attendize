@@ -8,6 +8,8 @@ return array (
   'TICKETS' => 'TICKETS',
   'Twitter' => 'Twitter',
   'Whatsapp' => 'Whatsapp',
+  'element' => 'Element',
+  'mastodon' => 'Mastodon',
   'amount' => 'Menge',
   'at' => '@',
   'attendee_cancelled' => 'Abgesagt',

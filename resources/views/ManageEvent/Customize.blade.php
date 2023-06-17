@@ -310,12 +310,20 @@
                             {!! Form::checkbox('social_show_linkedin', 1, $event->social_show_linkedin, ['id' => 'social_show_linkedin', 'data-toggle' => 'toggle']) !!}
                             {!! Form::label('social_show_linkedin', trans("Social.linkedin")) !!}
                         </div>
-                        <div class="custom-checkbox">
+                        <div class="custom-checkbox mb5">
 
                             {!! Form::checkbox('social_show_whatsapp', 1, $event->social_show_whatsapp, ['id' => 'social_show_whatsapp', 'data-toggle' => 'toggle']) !!}
                             {!! Form::label('social_show_whatsapp', trans("Social.whatsapp")) !!}
 
 
+                        </div>
+                        <div class="custom-checkbox mb5">
+                            {!! Form::checkbox('social_show_element', 1, $event->social_show_element, ['id' => 'social_show_element', 'data-toggle' => 'toggle']) !!}
+                            {!! Form::label('social_show_element', trans("Social.element")) !!}
+                        </div>
+                        <div class="custom-checkbox">
+                            {!! Form::checkbox('social_show_mastodon', 1, $event->social_show_mastodon, ['id' => 'social_show_mastodon', 'data-toggle' => 'toggle']) !!}
+                            {!! Form::label('social_show_mastodon', trans("Social.mastodon")) !!}
                         </div>
                     </div>
 

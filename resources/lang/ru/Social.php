@@ -17,4 +17,6 @@ return array (
   'social_share_text_help' => 'Это текст, который будет опубликован по умолчанию, когда пользователь поделится вашим событием в социальных сетях',
   'twitter' => 'Twitter',
   'whatsapp' => 'WhatsApp',
+  'element' => 'Element',
+  'mastodon' => 'Mastodon',
 );

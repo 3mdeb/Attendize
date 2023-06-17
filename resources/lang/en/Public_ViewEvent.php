@@ -93,6 +93,8 @@ return [
     'total'                             => 'Total',
     'Twitter'                           => 'Twitter',
     'Whatsapp'                          => 'Whatsapp',
+    'element'                           => 'Element',
+    'mastodon'                          => 'Mastodon',
     'your'                              => 'Your',
     'your_email_address'                => 'Your e-mail address',
     'your_information'                  => 'Your information',

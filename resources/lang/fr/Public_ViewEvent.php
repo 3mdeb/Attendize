@@ -12,6 +12,8 @@ return array (
   'TICKETS' => 'BILLETS',
   'Twitter' => 'Twitter',
   'Whatsapp' => 'Whatsapp',
+  'element' => 'Element',
+  'mastodon' => 'Mastodon',
   'amount' => 'Quantité',
   'at' => '@',
   'attendee_cancelled' => 'Annulé',

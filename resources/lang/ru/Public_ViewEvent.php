@@ -92,6 +92,8 @@ return [
     'total'                             => 'Всего',
     'Twitter'                           => 'Twitter',
     'Whatsapp'                          => 'Whatsapp',
+    'element'                           => 'Element',
+    'mastodon'                          => 'Mastodon',
     'your'                              => 'Ваш',
     'your_email_address'                => 'Ваш e-mail адрес',
     'your_information'                  => 'Ваша информация',

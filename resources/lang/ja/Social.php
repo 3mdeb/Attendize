@@ -14,4 +14,6 @@ return array(
     'social_share_text_help' => 'これは、ユーザーがソーシャルネットワークであなたのイベントを共有するときにデフォルトで共有されるテキストです。',
     'twitter'                => 'Twitter',
     'whatsapp'               => 'WhatsApp',
+    'element'                => 'Element',
+    'mastodon'               => 'Mastodon',
 );
