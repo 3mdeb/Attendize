@@ -64,37 +64,37 @@
                         </div>
                         <div class="layout_even">
                         <div class="event_details">
-                                <h4>@lang("Ticket.event")</h4>
-                            {{$event->title}}
-                                <h4>@lang("Ticket.organiser")</h4>
-                            {{$event->organiser->name}}
-                                <h4>@lang("Ticket.venue")</h4>
-                            {{$event->venue_name}}
-                                <h4>@lang("Ticket.start_date_time")</h4>
-                                {{$event->startDateFormatted()}}
-                                <h4>@lang("Ticket.end_date_time")</h4>
-                                {{$event->endDateFormatted()}}
+                                @lang("Ticket.event")
+                                <h4>{{$event->title}}</h4>
+                                @lang("Ticket.organiser")
+                                <h4>{{$event->organiser->name}}</h4>
+                                @lang("Ticket.venue")
+                                <h4>{{$event->venue_name}}</h4>
+                                @lang("Ticket.start_date_time")
+                                <h4>{{$event->startDateFormatted()}}</h4>
+                                @lang("Ticket.end_date_time")
+                                <h4>{{$event->endDateFormatted()}}</h4>
                         </div>
 
                         <div class="attendee_details">
-                                <h4>@lang("Ticket.name")</h4>
-                            {{$attendee->first_name.' '.$attendee->last_name}}
-                                <h4>@lang("Ticket.ticket_type")</h4>
-                            {{$attendee->ticket->title}}
-                                <h4>@lang("Ticket.order_ref")</h4>
-                            {{$order->order_reference}}
-                                <h4>@lang("Ticket.attendee_ref")</h4>
-                            {{$attendee->reference}}
-                                <h4>@lang("Ticket.price")</h4>
+                                @lang("Ticket.name")
+                                <h4>{{$attendee->first_name.' '.$attendee->last_name}}</h4>
+                                @lang("Ticket.ticket_type")
+                                <h4>{{$attendee->ticket->title}}</h4>
+                                @lang("Ticket.order_ref")
+                                <h4>{{$order->order_reference}}</h4>
+                                @lang("Ticket.attendee_ref")
+                                <h4>{{$attendee->reference}}</h4>
+                                @lang("Ticket.price")
 								@php
 	                            	// Calculating grand total including tax
 					                $grand_total = $attendee->ticket->total_price;
 					                $tax_amt = ($grand_total * $event->organiser->tax_value) / 100;
 					                $grand_total = $tax_amt + $grand_total;
 	                            @endphp
-	                            {{money($grand_total, $order->event->currency)}} @if ($attendee->ticket->total_booking_fee) (inc. {{money($attendee->ticket->total_booking_fee, $order->event->currency)}} @lang("Public_ViewEvent.inc_fees")) @endif @if ($event->organiser->tax_name) (inc. {{money($tax_amt, $order->event->currency)}} {{$event->organiser->tax_name}})
+	                            <h4>{{money($grand_total, $order->event->currency)}} @if ($attendee->ticket->total_booking_fee) (inc. {{money($attendee->ticket->total_booking_fee, $order->event->currency)}} @lang("Public_ViewEvent.inc_fees")) @endif @if ($event->organiser->tax_name) (inc. {{money($tax_amt, $order->event->currency)}} {{$event->organiser->tax_name}})
 	                            <br><br>{{$event->organiser->tax_name}} ID: {{ $event->organiser->tax_id }}
-                                @endif
+                                @endif</h4>
                             </div>
                         </div>
                         <div class="barcode">

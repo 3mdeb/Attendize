@@ -20,29 +20,29 @@
 
     <div class="layout_even">
         <div class="event_details">
-            <h4>@lang("Ticket.event")</h4>
-            @lang("Ticket.demo_event")
-            <h4>@lang("Ticket.organiser")</h4>
-            @lang("Ticket.demo_organiser")
-            <h4>@lang("Ticket.venue")</h4>
-            @lang("Ticket.demo_venue")
-            <h4>@lang("Ticket.start_date_time")</h4>
-            @lang("Ticket.demo_start_date_time")
-            <h4>@lang("Ticket.end_date_time")</h4>
-            @lang("Ticket.demo_end_date_time")
+            @lang("Ticket.event")
+            <h4>@lang("Ticket.demo_event")</h4>
+            @lang("Ticket.organiser")
+            <h4>@lang("Ticket.demo_organiser")</h4>
+            @lang("Ticket.venue")
+            <h4>@lang("Ticket.demo_venue")</h4>
+            @lang("Ticket.start_date_time")
+            <h4>@lang("Ticket.demo_start_date_time")</h4>
+            @lang("Ticket.end_date_time")
+            <h4>@lang("Ticket.demo_end_date_time")</h4>
         </div>
 
         <div class="attendee_details">
-            <h4>@lang("Ticket.name")</h4>
-            @lang("Ticket.demo_name")
-            <h4>@lang("Ticket.ticket_type")</h4>
-            @lang("Ticket.demo_ticket_type")
-            <h4>@lang("Ticket.order_ref")</h4>
-            @lang("Ticket.demo_order_ref")
-            <h4>@lang("Ticket.attendee_ref")</h4>
-            @lang("Ticket.demo_attendee_ref")
-            <h4>@lang("Ticket.price")</h4>
-            @lang("Ticket.demo_price")
+            @lang("Ticket.name")
+            <h4>@lang("Ticket.demo_name")</h4>
+            @lang("Ticket.ticket_type")
+            <h4>@lang("Ticket.demo_ticket_type")</h4>
+            @lang("Ticket.order_ref")
+            <h4>@lang("Ticket.demo_order_ref")</h4>
+            @lang("Ticket.attendee_ref")
+            <h4>@lang("Ticket.demo_attendee_ref")</h4>
+            @lang("Ticket.price")
+            <h4>@lang("Ticket.demo_price")</h4>
         </div>
     </div>
 
