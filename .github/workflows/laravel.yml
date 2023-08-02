@@ -22,11 +22,11 @@ jobs:
           args: --no-ansi --prefer-dist
           php_version: 7.4
           composer_version: 2
-          interaction: false
-          suggest: false
-          dev: true
-          progress: false
-          quiet: false
+          interaction: no
+          suggest: no
+          dev: yes
+          progress: no
+          quiet: no
       - name: Create Database
         run: |
           mkdir -p database
@@ -40,8 +40,8 @@ jobs:
           command: exec phpunit
           php_version: 7.4
           composer_version: 2
-          interaction: false
-          suggest: false
-          dev: true
-          progress: false
-          quiet: false
+          interaction: no
+          suggest: no
+          dev: yes
+          progress: no
+          quiet: no
