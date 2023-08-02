@@ -11,4 +11,3 @@
     @include('Public.ViewEvent.Partials.EventShareSection')
     @include('Public.ViewEvent.Partials.EventFooterSection')
 @stop
-

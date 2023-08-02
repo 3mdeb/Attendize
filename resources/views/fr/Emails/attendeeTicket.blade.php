@@ -7,4 +7,3 @@ Vous pouvez voir les détails de votre commande et télécharger vos tickets sur
 Votre référence de commande est <b>{{$attendee->order->order_reference}}</b>.<br>
 
 Merci<br>
-

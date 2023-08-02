@@ -27,7 +27,7 @@ abstract class  OrderRefundAbstract
         $this->refundedAmount = new Money($this->order->amount_refunded, $this->currency);
         Log::debug(sprintf("Already refunded amount: %s", $this->refundedAmount->display()));
         $this->maximumRefundableAmount = $this->organiserAmount->subtract($this->refundedAmount);
-        Log::debug(sprintf("Maxmimum refundable amount: %s", $this->maximumRefundableAmount->display()));
+        Log::debug(sprintf("Maximum refundable amount: %s", $this->maximumRefundableAmount->display()));
         // We need the organiser tax value to calculate what the attendee would've paid
         $event = $this->order->event;
         $organiserTaxAmount = new Money($event->organiser->tax_value);

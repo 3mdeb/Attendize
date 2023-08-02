@@ -48,4 +48,3 @@ export default moment.defineLocale('fr-ca', {
         return number + (number === 1 ? 'er' : 'e');
     }
 });
-

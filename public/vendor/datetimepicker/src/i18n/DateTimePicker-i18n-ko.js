@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------- 
+/* -----------------------------------------------------------------------------
 
   jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile
   Version 0.1.38
@@ -18,7 +18,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["ko"] = $.extend($.DateTimePicker.i18n["ko"], {
-        
+
     	language: "ko",
 			labels: {
 				'year': '년',
@@ -41,9 +41,9 @@
 		titleContentDate: "날짜 설정",
 		titleContentTime: "시간 설정",
 		titleContentDateTime: "날짜 및 시간 설정 ",
-	
+
 		setButtonContent: "설정하기",
 		clearButtonContent: "초기화"
-        
+
     });
 })(jQuery);

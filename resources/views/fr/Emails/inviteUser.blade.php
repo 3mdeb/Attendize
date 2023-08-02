@@ -9,7 +9,7 @@
 
 <p>
     Vous pouvez vous connecter avec les informations ci-dessous.<br><br>
-    
+
     Utilisateur : <b>{{$user->email}}</b> <br>
     Mot de passe : <b>{{$temp_password}}</b>
 </p>

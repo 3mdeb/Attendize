@@ -32,7 +32,7 @@
 
     <!--rtl-style-->
     @if (config('app.locale_dir') =='rtl')
-        {!! Html::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/application-rtl.css') !!}    
+        {!! Html::style(config('attendize.cdn_url_static_assets').'/assets/stylesheet/application-rtl.css') !!}
     @endif
     <!--/rtl-style-->
 

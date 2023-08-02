@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------- 
+/* -----------------------------------------------------------------------------
 
   jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile
   Version 0.1.38
@@ -53,7 +53,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["de"] = $.extend($.DateTimePicker.i18n["de"], {
-        
+
     	language: "de",
 
     	dateTimeFormat: "dd-MMM-yyyy HH:mm:ss",
@@ -68,7 +68,7 @@
 		titleContentDate: "Datum auswählen",
 		titleContentTime: "Zeit auswählen",
 		titleContentDateTime: "Datum & Zeit auswählen",
-	
+
 		setButtonContent: "Auswählen",
 		clearButtonContent: "Zurücksetzen",
 
@@ -81,7 +81,7 @@
 			else if(sMode === "datetime")
 				return oDate.dayShort + ", " + oDate.dd + " " + oDate.month+ ", " + oDate.yyyy + " " + oDate.HH + ":" + oDate.mm + ":" + oDate.ss;
 		}
-        
+
     });
 })(jQuery);
 
@@ -96,7 +96,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["en"] = $.extend($.DateTimePicker.i18n["en"], {
-        
+
     	language: "en",
 
     	dateTimeFormat: "dd-MM-yyyy HH:mm",
@@ -111,10 +111,10 @@
 		titleContentDate: "Set Date",
 		titleContentTime: "Set Time",
 		titleContentDateTime: "Set Date & Time",
-	
+
 		setButtonContent: "Set",
 		clearButtonContent: "Clear"
-        
+
     });
 })(jQuery);
 
@@ -131,7 +131,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["es"] = $.extend($.DateTimePicker.i18n["es"], {
-        
+
     	language: "es",
 
     	dateTimeFormat: "dd-MMM-yyyy HH:mm:ss",
@@ -146,7 +146,7 @@
 	    titleContentDate: "Ingresar fecha",
 		titleContentTime: "Ingresar hora",
 		titleContentDateTime: "Ingresar fecha y hora",
-	
+
 		setButtonContent: "Guardar",
 	    clearButtonContent: "Cancelar",
 
@@ -159,7 +159,7 @@
 			else if(sMode === "datetime")
 				return oDate.dayShort + ", " + oDate.dd + " " + oDate.month+ ", " + oDate.yyyy + " " + oDate.HH + ":" + oDate.mm + ":" + oDate.ss;
 		}
-        
+
     });
 })(jQuery);
 
@@ -176,7 +176,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["fr"] = $.extend($.DateTimePicker.i18n["fr"], {
-        
+
     	language: "fr",
 
     	dateTimeFormat: "dd-MM-yyyy HH:mm",
@@ -191,7 +191,7 @@
 		titleContentDate: "Choisir une date",
 		titleContentTime: "Choisir un horaire",
 		titleContentDateTime: "Choisir une date et un horaire",
-	
+
 		setButtonContent: "Choisir",
 		clearButtonContent: "Effacer",
 		formatHumanDate: function(oDate, sMode, sFormat)
@@ -203,7 +203,7 @@
 			else if(sMode === "datetime")
 				return oDate.dayShort + " " + oDate.dd + " " + oDate.month+ " " + oDate.yyyy + ", " + oDate.HH + ":" + oDate.mm + ":" + oDate.ss;
 		}
-        
+
     });
 })(jQuery);
 
@@ -220,7 +220,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["it"] = $.extend($.DateTimePicker.i18n["it"], {
-        
+
     	language: "it",
 
     	dateTimeFormat: "dd-MM-yyyy HH:mm",
@@ -235,10 +235,10 @@
 		titleContentDate: "Imposta Data",
 		titleContentTime: "Imposta Ora",
 		titleContentDateTime: "Imposta Data & Ora",
-	
+
 		setButtonContent: "Imposta",
 		clearButtonContent: "Pulisci"
-        
+
     });
 })(jQuery);
 
@@ -342,7 +342,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["nl"] = $.extend($.DateTimePicker.i18n["nl"], {
-        
+
     	language: "nl",
 
     	dateTimeFormat: "dd-MM-yyyy HH:mm",
@@ -357,10 +357,10 @@
 		titleContentDate: "Kies datum",
 		titleContentTime: "Kies tijd",
 		titleContentDateTime: "Kies datum & tijd",
-	
+
 		setButtonContent: "Kiezen",
 		clearButtonContent: "Leegmaken"
-        
+
     });
 })(jQuery);
 
@@ -392,7 +392,7 @@
 		titleContentDate: "Setare Dată",
 		titleContentTime: "Setare Oră",
 		titleContentDateTime: "Setare Dată și Oră",
-	
+
 		setButtonContent: "Setează",
 		clearButtonContent: "Șterge"
 

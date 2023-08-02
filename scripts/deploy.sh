@@ -52,7 +52,7 @@ result=$(su - $USER << EOF
 
     # Check if there are any uncommitted changes
     if [ -n "\$git_status" ]; then
-        echo "Uncommitted changes found. Reseting to HEAD.."
+        echo "Uncommitted changes found. Resetting to HEAD.."
         git reset --hard HEAD
     fi
 

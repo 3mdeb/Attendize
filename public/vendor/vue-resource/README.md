@@ -2,18 +2,20 @@
 
 Resource plugin for Vue.js.
 
-The plugin provides services for making web requests and handle responses using a XMLHttpRequest or JSONP.
+The plugin provides services for making web requests and handle responses using
+a XMLHttpRequest or JSONP.
 
 ## Setup
 
 ### Webpack/Browserify
 
-Add `vue` and `vue-resource` to your `package.json`, then `npm install`, then add these lines in your code:
+Add `vue` and `vue-resource` to your `package.json`, then `npm install`, then
+add these lines in your code:
 
 ```js
-var Vue = require('vue');
+var Vue = require("vue");
 
-Vue.use(require('vue-resource'));
+Vue.use(require("vue-resource"));
 ```
 
 ## Documentation
@@ -24,8 +26,11 @@ Vue.use(require('vue-resource'));
 
 ## Changelog
 
-Details changes for each release are documented in the [release notes](https://github.com/vuejs/vue-resource/releases).
+Details changes for each release are documented in the
+[release notes](https://github.com/vuejs/vue-resource/releases).
 
 ## Contribution
 
-If you find a bug or want to contribute to the code or documentation, you can help by submitting an [issue](https://github.com/vuejs/vue-resource/issues) or a pull request.
+If you find a bug or want to contribute to the code or documentation, you can
+help by submitting an [issue](https://github.com/vuejs/vue-resource/issues) or a
+pull request.

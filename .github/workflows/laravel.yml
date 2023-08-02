@@ -1,3 +1,4 @@
+---
 name: Attendize
 
 on:
@@ -13,34 +14,34 @@ jobs:
   laravel-build-and-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Install Dependencies
-      uses: php-actions/composer@v4
-      with:
-        command: install
-        args: --no-ansi --prefer-dist
-        php_version: 7.4
-        composer_version: 2
-        interaction: no
-        suggest: no
-        dev: yes
-        progress: no
-        quiet: no
-    - name: Create Database
-      run: |
-        mkdir -p database
-        touch database/database.sqlite
-    - name: Execute tests (Unit and Feature tests) via PHPUnit
-      env:
-        DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
-      uses: php-actions/composer@v4
-      with:
-        command: exec phpunit
-        php_version: 7.4
-        composer_version: 2
-        interaction: no
-        suggest: no
-        dev: yes
-        progress: no
-        quiet: no
+      - uses: actions/checkout@v1
+      - name: Install Dependencies
+        uses: php-actions/composer@v4
+        with:
+          command: install
+          args: --no-ansi --prefer-dist
+          php_version: 7.4
+          composer_version: 2
+          interaction: false
+          suggest: false
+          dev: true
+          progress: false
+          quiet: false
+      - name: Create Database
+        run: |
+          mkdir -p database
+          touch database/database.sqlite
+      - name: Execute tests (Unit and Feature tests) via PHPUnit
+        env:
+          DB_CONNECTION: sqlite
+          DB_DATABASE: database/database.sqlite
+        uses: php-actions/composer@v4
+        with:
+          command: exec phpunit
+          php_version: 7.4
+          composer_version: 2
+          interaction: false
+          suggest: false
+          dev: true
+          progress: false
+          quiet: false

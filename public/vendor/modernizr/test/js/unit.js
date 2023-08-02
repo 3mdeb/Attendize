@@ -662,8 +662,3 @@ test('Modernizr.prefixed autobind', function(){
 
 
 });
-
-
-
-
-

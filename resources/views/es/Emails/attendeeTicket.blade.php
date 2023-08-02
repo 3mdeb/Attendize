@@ -8,4 +8,3 @@ Puede ver la información de su pedido y descargar sus entradas en {{route('show
 Su referencia de pedido es <b>{{$attendee->order->order_reference}}</b>.<br>
 
 Gracias<br>
-

@@ -19,7 +19,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://srobbin.com/jquery-plugins/backstretch//blob/master/LICENSE-MIT"
+      "url": "http://srobbin.com/jquery-plugins/backstretch/blob/master/LICENSE-MIT"
     }
   ],
   "dependencies": {

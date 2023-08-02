@@ -149,7 +149,7 @@ var checkinApp = new Vue({
             this.QrTimeout = setTimeout(function () {
                 that.captureQrToCanvas();
             }, 500);
-            
+
         },
         /**
          * Takes stills from the video stream and sends them to the canvas so

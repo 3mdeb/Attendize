@@ -698,5 +698,3 @@ class EventAttendeesController extends MyBaseController
     }
 
 }
-
-

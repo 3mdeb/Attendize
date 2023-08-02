@@ -93,7 +93,7 @@ return array (
   'ticket_title_placeholder' => 'bv.: All-access ticket',
   'update_order' => 'Bestelling aanpassen',
   'widgets' => 'Widgets',
-  'LLH:obsolete' => 
+  'LLH:obsolete' =>
   array (
     'create_question' => 'Creëer vraag',
   ),

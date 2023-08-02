@@ -1,6 +1,6 @@
 <?php
 /*************************************************************************
- Generated via "php artisan localization:missing" at 2018/04/26 11:05:24 
+ Generated via "php artisan localization:missing" at 2018/04/26 11:05:24
 *************************************************************************/
 
 return array (
@@ -15,7 +15,7 @@ return array (
   'your_ticket_cancelled' => 'Votre billet a été annulé',
   'your_ticket_for_event' => 'Votre billet pour l\'événement :event',
     //================================== Obsolete strings ==================================//
-  'LLH:obsolete' => 
+  'LLH:obsolete' =>
   array (
 
   ),

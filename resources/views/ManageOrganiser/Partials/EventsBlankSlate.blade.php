@@ -18,5 +18,3 @@
     @lang("Event.create_event")
 </button>
 @stop
-
-

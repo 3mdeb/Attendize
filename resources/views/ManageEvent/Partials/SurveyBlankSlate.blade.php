@@ -18,5 +18,3 @@
         @lang("Question.create_question")
     </button>
 @stop
-
-

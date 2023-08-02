@@ -1,6 +1,7 @@
 # Contributing
 
-Before sending a pull request remember to follow [jQuery Core Style Guide](http://contribute.jquery.org/style-guide/js/).
+Before sending a pull request remember to follow
+[jQuery Core Style Guide](http://contribute.jquery.org/style-guide/js/).
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`

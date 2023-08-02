@@ -4,5 +4,3 @@
 // https://developer.mozilla.org/en/CSS/resize
 
 Modernizr.addTest('cssresize', Modernizr.testAllProps('resize'));
-
-

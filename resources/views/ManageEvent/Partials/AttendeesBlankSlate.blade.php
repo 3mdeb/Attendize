@@ -19,5 +19,3 @@
     @lang("ManageEvent.invite_attendee")
 </button>
 @stop
-
-

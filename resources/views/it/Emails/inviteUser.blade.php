@@ -9,7 +9,7 @@
 
 <p>
     Puoi accedere usando i seguenti dati.<br><br>
-    
+
     Username: <b>{{$user->email}}</b> <br>
     Password: <b>{{$temp_password}}</b>
 </p>

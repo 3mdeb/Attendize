@@ -41,4 +41,3 @@ window.TEST = {
     return str.replace(/^\s*/, "").replace(/\s*$/, "");
   }
 };
-

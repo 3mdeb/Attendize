@@ -7,4 +7,3 @@ Możesz przejrzeć szczegóły zamówienia i pobrać bilety {{route('showOrderDe
 Twój identyfikator zamówienia to <b>{{$attendee->order->order_reference}}</b>.<br>
 
 Dziękujemy<br>
-

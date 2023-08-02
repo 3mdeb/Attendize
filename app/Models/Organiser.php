@@ -180,4 +180,3 @@ class Organiser extends MyBaseModel implements AuthenticatableContract
         $this->rules = array_merge($this->rules, $this->extra_rules);
     }
 }
-

@@ -1,28 +1,32 @@
-**Responsive jQuery DateTime Picker library for Web & Mobile**
-<br /><br />
-![](https://raw.github.com/nehakadam/DateTimePicker/gh-pages/images/dp-screenshot.png)
-![](https://raw.github.com/nehakadam/DateTimePicker/gh-pages/images/tp-screenshot.png)
-![](https://raw.github.com/nehakadam/DateTimePicker/gh-pages/images/dtp-screenshot.png)
+# Responsive jQuery DateTime Picker library for Web & Mobile
 
-DateTime Picker is a quick highly customizable jQuery plugin. The design is clutter free & well suited for embedding it into mobile application development.
+![img](https://raw.github.com/nehakadam/DateTimePicker/gh-pages/images/dp-screenshot.png)
+![img](https://raw.github.com/nehakadam/DateTimePicker/gh-pages/images/tp-screenshot.png)
+![img](https://raw.github.com/nehakadam/DateTimePicker/gh-pages/images/dtp-screenshot.png)
 
-Users can change values using +/- buttons or type values directly into the textbox by selecting each value fields. 
+DateTime Picker is a quick highly customizable jQuery plugin. The design is
+clutter free & well suited for embedding it into mobile application development.
 
-For web, picker can be binded relative to reference element, were it will appear at the bottom of the element. For mobile, the picker can appear as a dialog box covering entire window. 
+Users can change values using +/- buttons or type values directly into the
+textbox by selecting each value fields.
 
+For web, picker can be binded relative to reference element, were it will appear
+at the bottom of the element. For mobile, the picker can appear as a dialog box
+covering entire window.
 
 ## Browser Support
+
 - Chrome, Firefox, Safari, Opera, IE 6+
 - Android 2.3+, iOS 6+, Windows Phone 8
 
-
 ## More Details
-For demo & api documentation visit [Plugin Page](http://nehakadam.github.io/DateTimePicker/)
 
+For demo & api documentation visit
+[Plugin Page](http://nehakadam.github.io/DateTimePicker/)
 
 ## Build System
 
-- Install devDependencies listed in "package.json" 
+- Install devDependencies listed in "package.json"
 
 `npm install`
 
@@ -31,10 +35,11 @@ For demo & api documentation visit [Plugin Page](http://nehakadam.github.io/Date
 `grunt`
 
 Tasks configured in "Gruntfile.js"
-- Copy "DateTimePicker.js" and "DateTimePicker.css" from "src" folder to "dist" folder.
+
+- Copy "DateTimePicker.js" and "DateTimePicker.css" from "src" folder to
+    "dist" folder.
 - Uglify "src/DateTimePicker.js" to "dist/DateTimePicker.min.js"
 - Minify "src/DateTimePicker.css" to "dist/DateTimePicker.min.css"
-
 
 ## Installations
 
@@ -47,35 +52,37 @@ Tasks configured in "Gruntfile.js"
     `bower install flat-datetimepicker`
 
 ## CDN
+
 DateTimePicker is hosted on [jsDelivr](http://www.jsdelivr.com).
 
 Files - Latest
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/datetimepicker@latest/dist/DateTimePicker.min.css" />
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/datetimepicker@latest/dist/DateTimePicker.min.js"></script>
 ```
 
 Files - Particular Version
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/datetimepicker@<version>/dist/DateTimePicker.min.css" />
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/datetimepicker@<version>/dist/DateTimePicker.min.js"></script>
 ```
 
 ## Authors
+
 [Neha Kadam](https://github.com/nehakadam): Developer
 
 Special Thanks:
-- [Jean-Christophe Hoelt](https://github.com/j3k0) - NPM packaging. Few customization options.
-- [All Contributors](https://github.com/nehakadam/DateTimePicker/contributors)
 
+- [Jean-Christophe Hoelt](https://github.com/j3k0) - NPM packaging. Few
+    customization options.
+- [All Contributors](https://github.com/nehakadam/DateTimePicker/contributors)
 
 Copyright 2014-2019 [Lajpat Shah](https://github.com/lajpatshah)
 
-
-**I can not actively maintain or reply quickly due to time constraints, please consider this point before using plugin.**
-
+**I can not actively maintain or reply quickly due to time constraints, please
+consider this point before using plugin.**
 
 ## License
 

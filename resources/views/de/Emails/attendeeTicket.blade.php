@@ -7,4 +7,3 @@ Hier kannst Deine Bestellung ansehen und Deine Tickets herunterladen: {{route('s
 Deine Bestellnummer ist <b>{{$attendee->order->order_reference}}</b>.<br>
 
 Danke!<br>
-

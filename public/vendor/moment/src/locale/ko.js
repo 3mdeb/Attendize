@@ -56,4 +56,3 @@ export default moment.defineLocale('ko', {
         return hour < 12 ? '오전' : '오후';
     }
 });
-

@@ -9,7 +9,7 @@
 
 <p>
     Możesz skorzystać z następujących tymczasowych danych logowania:.<br><br>
-    
+
     Login: <b>{{$user->email}}</b> <br>
     Hasło: <b>{{$temp_password}}</b>
 </p>
