@@ -14,5 +14,5 @@
 @stop
 
 @section('blankslate-body')
-    
+
 @stop

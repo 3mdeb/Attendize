@@ -7,4 +7,3 @@
 Ссылка на ваш заказ <b>{{$attendee->order->order_reference}}</b>.<br>
 
 Спасибо за ваш заказ<br>
-

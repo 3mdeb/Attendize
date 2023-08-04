@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------- 
+/* -----------------------------------------------------------------------------
 
   jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile
   Version 0.1.38
@@ -19,7 +19,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["nl"] = $.extend($.DateTimePicker.i18n["nl"], {
-        
+
     	language: "nl",
 
     	dateTimeFormat: "dd-MM-yyyy HH:mm",
@@ -34,9 +34,9 @@
 		titleContentDate: "Kies datum",
 		titleContentTime: "Kies tijd",
 		titleContentDateTime: "Kies datum & tijd",
-	
+
 		setButtonContent: "Kiezen",
 		clearButtonContent: "Leegmaken"
-        
+
     });
 })(jQuery);

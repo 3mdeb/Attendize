@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------- 
+/* -----------------------------------------------------------------------------
 
   jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile
   Version 0.1.38
@@ -34,7 +34,7 @@
 		titleContentDate: "Setare Dată",
 		titleContentTime: "Setare Oră",
 		titleContentDateTime: "Setare Dată și Oră",
-	
+
 		setButtonContent: "Setează",
 		clearButtonContent: "Șterge"
 

@@ -7,4 +7,3 @@ Puoi vedere tutte le informazioni relative al tuo ordine e scaricare i biglietti
 Il riferimento del tuo ordine è <b>{{$attendee->order->order_reference}}</b>.<br>
 
 Grazie<br>
-

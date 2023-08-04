@@ -9,4 +9,3 @@
 @include('Public.ViewEvent.Partials.EventPaymentSection')
 @include('Public.ViewEvent.Partials.EventFooterSection')
 @stop
-

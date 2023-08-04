@@ -23,4 +23,3 @@
      @include('Public.ViewOrganiser.Partials.OrganiserEventsSection')
      @include('Public.ViewOrganiser.Partials.OrganiserFooterSection')
 @stop
-

@@ -1,12 +1,12 @@
 <?php
 /*************************************************************************
-   Generated via "php artisan localization:missing" at 2018/04/26 10:21:11 
+   Generated via "php artisan localization:missing" at 2018/04/26 10:21:11
  *************************************************************************/
 
 return array (
     //============================== New strings to translate ==============================//
     // Defined in file C:\\wamp\\www\\attendize\\resources\\views\\ManageOrganiser\\Events.blade.php
-    'sort' => 
+    'sort' =>
 	array (
 	    'event_title' => 'Titre de l\'événement',
 	    'start_date' => 'Date de début',
@@ -31,31 +31,31 @@ return array (
     'check_in_all_tickets' => 'Enregistrer tous les tickets associés à cette commande',
     'confirmation_malformed' => 'Le code de confirmation manque ou il est mal formé.',
     'confirmation_successful' => 'Ça a marché ! Votre courriel est désormais vérifié.  Vous pouvez vous connecter.',
-    'error' => 
+    'error' =>
 	array (
-	    'email' => 
+	    'email' =>
 		array (
 		    'email' => 'Merci de saisir une adresse de courriel valide.',
 		    'required' => 'L\'adresse de courriel est requise.',
 		    'unique' => 'Cette adresse de courriel est déjà utilisée pour ce compte.',
 		),
-	    'first_name' => 
+	    'first_name' =>
 		array (
 		    'required' => 'Merci de saisir votre prénom.',
 		),
-	    'last_name' => 
+	    'last_name' =>
 		array (
 		    'required' => 'Merci de saisir votre nom.',
 		),
-	    'page_bg_color' => 
+	    'page_bg_color' =>
 		array (
 		    'required' => 'Merci de saisir une couleur de fond.',
 		),
-	    'page_header_bg_color' => 
+	    'page_header_bg_color' =>
 		array (
 		    'required' => 'Merci de saisir une couleur de fond pour l\'en-tête.',
 		),
-	    'password' => 
+	    'password' =>
 		array (
 		    'passcheck' => 'Ce mot de passe est incorrect.',
 		),

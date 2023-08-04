@@ -3,26 +3,26 @@
 <html>
 
 	<head>
-	
+
 		<title>Custom Input Value</title>
-	
+
 		<link rel="stylesheet" type="text/css" href="../src/DateTimePicker.css" />
-		
+
 		<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="../src/DateTimePicker.js"></script>
-	
+
 		<!--[if lt IE 9]>
 			<link rel="stylesheet" type="text/css" href="../src/DateTimePicker-ltie9.css" />
 			<script type="text/javascript" src="../src/DateTimePicker-ltie9.js"></script>
 		<![endif]-->
-	
+
 		<style>
-		
+
 			p
 			{
 				margin-left: 20px;
 			}
-		
+
 			input
 			{
 				width: 200px;
@@ -41,27 +41,27 @@
 
 				padding: 10px 20px;
 				margin: 20px;
-			
+
 				font-size: 12px;
 
 				cursor: pointer;
 			}
-		
+
 		</style>
-	
+
 	</head>
-	
+
 	<body>
-	
+
 		<div class="container">
-		
+
 			<div class="cont-date">
 				<p>Date : </p>
 				<input id="input-date" type="text" data-field="date" value="Friday, 23 October" readonly>
 				<span id="btnCurrentDate" class="btn">Today</span>
 				<span id="btnGetDate" class="btn">Get Date</span>
 			</div>
-			
+
 			<div class="cont-datetime">
 				<p>Time : </p>
 				<input id="input-time" type="text" data-field="time" value="12:35" readonly>
@@ -74,15 +74,15 @@
 				<span id="btnGetDateTime" class="btn">Get DateTime</span>
 
 			</div>
-		
+
 		</div>
-		
+
 		<div id="dateBox"></div>
 
 		<div id="dtBox"></div>
-		
+
 		<script type="text/javascript">
-		
+
 			$(document).ready(function()
 			{
 				var oDTP1, oDTP2;
@@ -99,18 +99,18 @@
 					parseDateTimeString: function(sDateTime, sMode, sFormat, oInputElement)
 					{
 						oDTP1 = this;
-					
+
 						console.log(sDateTime + " " + sMode);
 						var dThisDate = new Date(),
 						iArrDateTimeComps, sRegex;
-						
+
 						if($.cf._isValid(sDateTime))
 						{
 							// "Friday, 23 October"
 							sRegex = /([a-zA-Z]+)(, )(\d{1,2})( )([a-zA-Z]+)/;
 
 							iArrDateTimeComps = sDateTime.match(sRegex);
-							
+
 
 							dThisDate = new Date(
 								dThisDate.getFullYear(),
@@ -119,14 +119,14 @@
 								0, 0, 0, 0
 							);
 						}
-						
+
 						return dThisDate;
 					},
 
 					formatDateTimeString: function(oDate, sMode, sFormat, oInputElement)
 					{
 						oDTP1 = this;
-					
+
 						console.log(oDate);
 						return oDate.day + ", " + oDate.dd + " " + oDate.month;
 					}
@@ -174,7 +174,7 @@
 			});
 
 		</script>
-	
+
 	</body>
 
 </html>

@@ -39,4 +39,3 @@ $(document).ready(function(){
         border-bottom-right-radius: 0;
     }
 </style>
-

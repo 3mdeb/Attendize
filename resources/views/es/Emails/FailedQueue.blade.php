@@ -5,4 +5,3 @@
 <pre>
     {{json_encode($job)}}
 </pre>
-

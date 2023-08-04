@@ -73,7 +73,7 @@ tbody,
 
 .fc tbody .fc-row .fc-content-skeleton table {
 	/* provides a min-height for the row, but only effective for IE, which exaggerates this value,
-	   making it look more like 3em. for other browers, it will already be this tall */
+	   making it look more like 3em. for other browsers, it will already be this tall */
 	height: 1em;
 }
 

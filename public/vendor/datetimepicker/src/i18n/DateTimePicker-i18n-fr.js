@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------- 
+/* -----------------------------------------------------------------------------
 
   jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile
   Version 0.1.38
@@ -19,7 +19,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["fr"] = $.extend($.DateTimePicker.i18n["fr"], {
-        
+
     	language: "fr",
 
     	dateTimeFormat: "dd-MM-yyyy HH:mm",
@@ -34,7 +34,7 @@
 		titleContentDate: "Choisir une date",
 		titleContentTime: "Choisir un horaire",
 		titleContentDateTime: "Choisir une date et un horaire",
-	
+
 		setButtonContent: "Choisir",
 		clearButtonContent: "Effacer",
 		formatHumanDate: function(oDate, sMode, sFormat)
@@ -46,6 +46,6 @@
 			else if(sMode === "datetime")
 				return oDate.dayShort + " " + oDate.dd + " " + oDate.month+ " " + oDate.yyyy + ", " + oDate.HH + ":" + oDate.mm + ":" + oDate.ss;
 		}
-        
+
     });
 })(jQuery);

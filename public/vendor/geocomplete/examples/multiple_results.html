@@ -15,19 +15,19 @@
     </form>
 
     <ul id="multiple"></ul>
-    
+
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
     <script src="../jquery.geocomplete.js"></script>
     <script src="logger.js"></script>
-    
+
     <script>
       $(function(){
-        
+
         var $geocomplete = $("#geocomplete"),
           $multiple = $("#multiple");
-        
+
         $geocomplete
           .geocomplete({ map: ".map_canvas" })
           .bind("geocode:multiple", function(event, results){
@@ -41,13 +41,12 @@
                 });
             });
           });
-        
+
         $("#find").click(function(){
           $("#geocomplete").trigger("geocode");
         });
-        
+
       });
     </script>
   </body>
 </html>
-

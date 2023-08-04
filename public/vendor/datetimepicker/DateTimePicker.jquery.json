@@ -21,7 +21,7 @@
         }
     ],
 
-	"repository": 
+	"repository":
 	{
 		"type" : "git",
 		"url" : "https://github.com/nehakadam/DateTimePicker.git"
@@ -38,7 +38,7 @@
         }
     ],
 
-	"dependencies": 
+	"dependencies":
 	{
 		"jquery": ">=1.9.1"
 	},

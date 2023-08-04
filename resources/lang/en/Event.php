@@ -30,7 +30,7 @@ return array (
   'event_orders' => 'Event Orders',
   'event_start_date' => 'Event Start Date',
   'event_title' => 'Event Title',
-  'event_title_placeholder' => 'E.g: :name\'s Interational Conference',
+  'event_title_placeholder' => 'E.g: :name\'s International Conference',
   'event_visibility' => 'Event Visibility',
   'go_live' => 'Event Successfully Made Live! You can undo this action in event settings page.',
   'n_attendees_for_event' => ':num Attendee(s) for event: :name (:date)',

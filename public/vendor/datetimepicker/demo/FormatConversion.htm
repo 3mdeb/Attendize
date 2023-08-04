@@ -3,26 +3,26 @@
 <html>
 
 	<head>
-	
+
 		<title>Basic Examples - Set DateTime In Input Field</title>
-	
+
 		<link rel="stylesheet" type="text/css" href="../src/DateTimePicker.css" />
-	
+
 		<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="../src/DateTimePicker.js"></script>
-	
+
 		<!--[if lt IE 9]>
 			<link rel="stylesheet" type="text/css" href="../src/DateTimePicker-ltie9.css" />
 			<script type="text/javascript" src="../src/DateTimePicker-ltie9.js"></script>
 		<![endif]-->
-		
+
 		<style type="text/css">
-		
+
 			p
 			{
 				margin-left: 20px;
 			}
-		
+
 			input
 			{
 				width: 200px;
@@ -30,9 +30,9 @@
 				margin-left: 20px;
 				margin-bottom: 20px;
 			}
-		
+
 		</style>
-	
+
 	</head>
 
 	<body>
@@ -41,9 +41,9 @@
 		<input type="text" data-field="date" data-format="dd-MM-yyyy" readonly>
 
 		<div id="dtBox"></div>
-	
+
 		<script type="text/javascript">
-		
+
 			var inputDateString = "2016-10-22", outputDateString, dDateTime;
 
 			$(document).ready(function()
@@ -56,7 +56,7 @@
 						oDTP = this;
 						var inputDateStringComp = inputDateString.split("-");
 
-						// Set Date 
+						// Set Date
 						oDTP.settings.defaultDate = new Date(parseInt(inputDateStringComp[0]), parseInt(inputDateStringComp[1]) - 1, parseInt(inputDateStringComp[2]), 0, 0, 0, 0);
 						dDateTime = new Date(oDTP.settings.defaultDate);
 
@@ -78,7 +78,7 @@
 					}
 				});
 			});
-		
+
 		</script>
 
 	</body>

@@ -3,26 +3,26 @@
 <html>
 
 	<head>
-	
+
 		<title>DateTimePicker in Custom Container</title>
-	
+
 		<link rel="stylesheet" type="text/css" href="../src/DateTimePicker.css" />
-	
+
 		<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="../src/DateTimePicker.js"></script>
-		
+
 		<!--[if lt IE 9]>
 			<link rel="stylesheet" type="text/css" href="../src/DateTimePicker-ltie9.css" />
 			<script type="text/javascript" src="../src/DateTimePicker-ltie9.js"></script>
 		<![endif]-->
-		
+
 		<style type="text/css">
-		
+
 			p
 			{
 				margin-left: 20px;
 			}
-		
+
 			#input-date
 			{
 				display: none;
@@ -35,20 +35,20 @@
 				height: auto;
 			}
 
-		
+
 		</style>
-		
+
 	</head>
-	
+
 	<body>
-	
+
 		<p>Date : </p>
 		<span id="input-date" type="text" data-field="date"></span>
-	
+
 		<div id="dtBox"></div>
-	
+
 		<script type="text/javascript">
-		
+
 			$(document).ready(function()
 			{
 				$("#dtBox").DateTimePicker({
@@ -73,9 +73,9 @@
 
 				});
 			});
-		
+
 		</script>
-	
+
 	</body>
 
 </html>

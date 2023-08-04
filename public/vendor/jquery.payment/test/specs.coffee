@@ -399,7 +399,7 @@ describe 'jquery.payment', ->
         assert.equal $expiry.val(), '01 / 4'
         done()
 
-    it 'should format month expiry corrrectly for 0 followed by single digit > 2', (done) ->
+    it 'should format month expiry correctly for 0 followed by single digit > 2', (done) ->
       $expiry = $('<input type=text>').payment('formatCardExpiry')
       $expiry.val('0')
 

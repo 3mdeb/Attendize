@@ -360,7 +360,7 @@ class CreateUsersTable extends Migration
 //
 //        /**
 //         * Related to each question  , can have one or many
-//         * Whats you name etc?
+//         * What's you name etc?
 //         *
 //         */
 //        Schema::create('question_options', function($t) {

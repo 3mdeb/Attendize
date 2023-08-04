@@ -44,7 +44,7 @@ class Utils
     }
 
     /**
-     * Are we the cloud version of attendize or in dev enviornment?
+     * Are we the cloud version of attendize or in dev environment?
      *
      * @return bool
      */
@@ -64,7 +64,7 @@ class Utils
     }
 
     /**
-     * Are we in a dev enviornment?
+     * Are we in a dev environment?
      *
      * @return bool
      */

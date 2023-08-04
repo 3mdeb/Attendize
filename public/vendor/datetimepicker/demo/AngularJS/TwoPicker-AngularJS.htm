@@ -3,28 +3,28 @@
 <html>
 
 	<head>
-	
+
 		<title>Date Picker with AngularJS</title>
 
 		<link rel="stylesheet" type="text/css" href="../../src/DateTimePicker.css" />
-	
+
 		<script type="text/javascript" src="../jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="angular-1.4.2.min.js"></script>
 
 		<script type="text/javascript" src="../../src/DateTimePicker.js"></script>
-		
+
 		<!--[if lt IE 9]>
 			<link rel="stylesheet" type="text/css" href="../src/DateTimePicker-ltie9.css" />
 			<script type="text/javascript" src="../src/DateTimePicker-ltie9.js"></script>
 		<![endif]-->
-		
+
 		<style type="text/css">
-		
+
 			p
 			{
 				margin-left: 20px;
 			}
-		
+
 			input
 			{
 				width: 200px;
@@ -32,14 +32,14 @@
 				margin-left: 20px;
 				margin-bottom: 20px;
 			}
-		
+
 		</style>
 
 		<script type="text/javascript">
 
 			var dQuestionDate, dReviewDate;
 
-			angular.module("App-DTP", []).controller("Ctrl-DTP", function($scope) 
+			angular.module("App-DTP", []).controller("Ctrl-DTP", function($scope)
 			{
 				$scope.question = {};
 			    $scope.question.date = new Date(2016, 2, 1, 0, 0, 0, 0);
@@ -61,7 +61,7 @@
 				    console.log("After review.setValue : " + $scope.reviews.date + " " + $scope.reviews.datestr);
 				};
 			});
-		
+
 			$(document).ready(function()
 			{
 				$('#dtBox-1').DateTimePicker(
@@ -100,7 +100,7 @@
 			});
 
 		</script>
-		
+
 	</head>
 
 	<body ng-app="App-DTP" ng-controller="Ctrl-DTP">
@@ -114,11 +114,11 @@
             <p>Review Date : {{ reviews.datestr }}</p>
             <input type="text" name="reviewDate" id="review_date" data-field="date" ng-model="reviews.datestr" placeholder="Date Hired (optional)" ng-change="reviews.setValue()" readonly required />
       	</div>
-	
-		
+
+
      	<div id="dtBox-1"></div>
      	<div id="dtBox-2"></div>
-		
+
 	</body>
 
 </html>

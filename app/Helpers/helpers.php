@@ -14,5 +14,3 @@ if (!function_exists('money')) {
             $currency->thousand_point) . $currency->symbol_right;
     }
 }
-
-

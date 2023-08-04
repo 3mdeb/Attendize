@@ -1,0 +1,3 @@
+[codespell]
+skip = '*.svg,*.js,*/de/*,*/es/*,*/fr/*,*/it/*,*/ja/*,*/nl/*,*/pl/*,*/ru/*,\
+    ,*jquery.min.map,*min.js*,*min.map*,*bootstrap.css.map,*Internationalization-German.htm,'

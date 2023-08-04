@@ -11,4 +11,3 @@
     <script>var OrderExpires = {{strtotime($expires)}};</script>
     @include('Public.ViewEvent.Partials.EventFooterSection')
 @stop
-

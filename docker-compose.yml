@@ -1,11 +1,12 @@
+---
 version: '3.2'
 
 services:
   web:
     image: attendize_web:latest
     ports:
-    - "8080:80"
-    - "8081:443"
+      - "8080:80"
+      - "8081:443"
     volumes:
       - .:/usr/share/nginx/html
       - .:/var/www
@@ -48,4 +49,4 @@ services:
     image: redis
 
 volumes:
-    mysql-data:
+  mysql-data:

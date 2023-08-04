@@ -1,8 +1,8 @@
-module.exports = function(grunt) 
+module.exports = function(grunt)
 {
 	var sBanner = '/* ----------------------------------------------------------------------------- ' +
 	'\n\n  jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile' +
-	'\n  Version <%= pkg.version %>' + 
+	'\n  Version <%= pkg.version %>' +
 	'\n  Copyright (c)2014-<%= grunt.template.today("yyyy") %> Lajpat Shah' +
 	'\n  Contributors : https://github.com/nehakadam/DateTimePicker/contributors' +
 	'\n  Repository : https://github.com/nehakadam/DateTimePicker' +
@@ -18,25 +18,25 @@ module.exports = function(grunt)
 
 		concat:
 		{
-			lang: 
+			lang:
 		    {
-		    	options: 
+		    	options:
 				{
 					separator: '\n\n\n\n',
 		      stripBanners: true,
 					banner: sBanner
 				},
-				
+
 	      	src: ['src/i18n/*', '!src/i18n/DateTimePicker-i18n.js'],
 	      	dest: 'src/i18n/DateTimePicker-i18n.js',
 		     	nonull: true
 		    }
 		},
 
-		copy: 
+		copy:
 		{
 
-		  	main: 
+		  	main:
 		  	{
 		    	expand: true,
 		    	cwd: 'src/',
@@ -44,7 +44,7 @@ module.exports = function(grunt)
 		    	dest: 'dist'
 		  	},
 
-		  	lang: 
+		  	lang:
 		  	{
 		    	expand: true,
 		    	cwd: 'src/i18n',
@@ -53,16 +53,16 @@ module.exports = function(grunt)
 		  	}
 		},
 
-		uglify: 
+		uglify:
 		{
-			options: 
+			options:
 			{
 				banner: sBanner,
 				compress: {
 			    drop_console: true
 			  }
 			},
-			build: 
+			build:
 			{
 				files:
 				{
@@ -72,13 +72,13 @@ module.exports = function(grunt)
 			}
 		},
 
-		cssmin: 
+		cssmin:
 		{
-			options: 
+			options:
 			{
 				banner: sBanner
 			},
-			build: 
+			build:
 			{
 				files:
 				{
@@ -88,7 +88,7 @@ module.exports = function(grunt)
 			}
 		},
 
-		jshint: 
+		jshint:
 		{
 			dist:
 			{
@@ -105,8 +105,8 @@ module.exports = function(grunt)
 				devel: true,
 				//unused: true,
 				//undef: true,
-			
-				globals: 
+
+				globals:
 				{
 					$: false,
     			jQuery: false,
@@ -126,7 +126,7 @@ module.exports = function(grunt)
 			{
 				src: ['src/DateTimePicker.css']
 			},
-			
+
 			options:
 			{
 				"fallback-colors": false,
@@ -145,8 +145,8 @@ module.exports = function(grunt)
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 
-	// Default task(s).  
-	// 
+	// Default task(s).
+	//
 	grunt.registerTask('default', ['uglify', 'cssmin', 'copy']);
 	grunt.registerTask('lang', ['concat:lang', 'copy:lang']);
 	grunt.registerTask('lint', ['jshint', 'csslint']);

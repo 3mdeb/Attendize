@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------- 
+/* -----------------------------------------------------------------------------
 
   jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile
   Version 0.1.38
@@ -8,7 +8,7 @@
   Documentation : https://nehakadam.github.io/DateTimePicker
 
  ----------------------------------------------------------------------------- */
- 
+
 if (!Array.prototype.indexOf)
 {
 	Array.prototype.indexOf = function(elt /*, from*/)
@@ -30,12 +30,12 @@ if (!Array.prototype.indexOf)
 	};
 }
 
-jQuery.fn.fadeIn = function() 
+jQuery.fn.fadeIn = function()
 {
     this.show();
 }
 
-jQuery.fn.fadeOut = function() 
+jQuery.fn.fadeOut = function()
 {
     this.hide();
 }

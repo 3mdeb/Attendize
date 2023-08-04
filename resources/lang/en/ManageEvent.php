@@ -96,7 +96,7 @@ return array (
   'ticket_title_placeholder' => 'E.g: General Admission',
   'update_order' => 'Update Order',
   'widgets' => 'Widgets',
-  'LLH:obsolete' => 
+  'LLH:obsolete' =>
   array (
     'create_question' => 'Create Question',
   ),

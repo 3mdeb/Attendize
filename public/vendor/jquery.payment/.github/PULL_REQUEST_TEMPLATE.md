@@ -1,10 +1,14 @@
+# Title
+
 ## Summary
 
 Simple summary of what was changed.
 
 ## Motivation
 
-Why are you making this change? Please provide supporting references for new BIN numbers and links to minimal reproductions (e.g. with jsfiddle) when fixing bugs.
+Why are you making this change? Please provide supporting references for new BIN
+numbers and links to minimal reproductions (e.g. with jsfiddle) when fixing
+bugs.
 
 ## Testing
 

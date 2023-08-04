@@ -9,4 +9,3 @@
     @include('Public.ViewEvent.Embedded.Partials.PoweredByEmbedded')
     <script> var OrderExpires = {{strtotime($expires)}};</script>
 @stop
-

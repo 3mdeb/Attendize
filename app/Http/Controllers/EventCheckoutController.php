@@ -470,7 +470,7 @@ class EventCheckoutController extends Controller
                     'message' => $response->getMessage(),
                 ]);
             }
-        } catch (\Exeption $e) {
+        } catch (Exception $e) {
             Log::error($e);
             $error = 'Sorry, there was an error processing your payment. Please try again.';
         }

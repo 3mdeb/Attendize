@@ -46,7 +46,7 @@
 
 		// Figure out what the size of the chart will be.
 		// If the canvas has a specified width and height, we use those else
-		// we look to see if the canvas node has a CSS width and height. 
+		// we look to see if the canvas node has a CSS width and height.
 		// If there is still no height, fill the parent container
 		this.width = context.canvas.width || parseInt(Chart.helpers.getStyle(context.canvas, 'width')) || Chart.helpers.getMaximumWidth(context.canvas);
 		this.height = context.canvas.height || parseInt(Chart.helpers.getStyle(context.canvas, 'height')) || Chart.helpers.getMaximumHeight(context.canvas);
@@ -1099,7 +1099,7 @@
 		easing: "", // the easing to use for this animation
 		render: null, // render function used by the animation service
 
-		onAnimationProgress: null, // user specified callback to fire on each step of the animation 
+		onAnimationProgress: null, // user specified callback to fire on each step of the animation
 		onAnimationComplete: null, // user specified callback to fire when the animation finishes
 	});
 
@@ -1176,7 +1176,7 @@
 					if (this.animations[i].animationObject.onAnimationComplete && this.animations[i].animationObject.onAnimationComplete.call) {
 						this.animations[i].animationObject.onAnimationComplete.call(this.animations[i].chartInstance, this.animations[i]);
 					}
-					
+
 					// executed the last frame. Remove the animation.
 					this.animations[i].chartInstance.animating = false;
 					this.animations.splice(i, 1);
@@ -1833,7 +1833,7 @@
 		Chart = root.Chart,
 		helpers = Chart.helpers;
 
-	// The layout service is ver self explanatory.  It's responsible for the layout within a chart.  
+	// The layout service is ver self explanatory.  It's responsible for the layout within a chart.
 	// Scales, Legends and Plugins all rely on the layout service and can easily register to be placed anywhere they need
 	// It is this service's responsibility of carrying out that layout.
 	Chart.layoutService = {
@@ -1896,7 +1896,7 @@
 
 			// Essentially we now have any number of boxes on each of the 4 sides.
 			// Our canvas looks like the following.
-			// The areas L1 and L2 are the left axes. R1 is the right axis, T1 is the top axis and 
+			// The areas L1 and L2 are the left axes. R1 is the right axis, T1 is the top axis and
 			// B1 is the bottom axis
 			// There are also 4 quadrant-like locations (left to right instead of clockwise) reserved for chart overlays
 			// These locations are single-box locations only, when trying to register a chartArea location that is already taken,
@@ -1921,11 +1921,11 @@
 			// |----------------------------------------------------|
 			//
 			// What we do to find the best sizing, we do the following
-			// 1. Determine the minimum size of the chart area. 
+			// 1. Determine the minimum size of the chart area.
 			// 2. Split the remaining width equally between each vertical axis
 			// 3. Split the remaining height equally between each horizontal axis
 			// 4. Give each layout the maximum size it can be. The layout will return it's minimum size
-			// 5. Adjust the sizes of each axis based on it's minimum reported size. 
+			// 5. Adjust the sizes of each axis based on it's minimum reported size.
 			// 6. Refit each axis
 			// 7. Position each axis in the final location
 			// 8. Tell the chart the final location of the chart area
@@ -2113,7 +2113,7 @@
 					box.top = top;
 					box.bottom = top + box.height;
 
-					// Move to next point 
+					// Move to next point
 					top = box.bottom;
 
 				} else {
@@ -2164,7 +2164,7 @@
 		position: 'top',
 		fullWidth: true, // marks that this box should take the full width of the canvas (pushing down other boxes)
 
-		// a callback that will handle 
+		// a callback that will handle
 		onClick: function(e, legendItem) {
 			var dataset = this.chart.data.datasets[legendItem.datasetIndex];
 			dataset.hidden = !dataset.hidden;
@@ -2399,7 +2399,7 @@
 					helpers.each(this.legendItems, function(legendItem, i) {
 						var textWidth = ctx.measureText(legendItem.text).width;
 						var width = this.options.labels.boxWidth + (this.options.labels.fontSize / 2) + textWidth;
-						
+
 						if (cursor.x + width >= this.width) {
 							cursor.y += this.options.labels.fontSize + (this.options.labels.padding);
 							cursor.line++;
@@ -2408,7 +2408,7 @@
 
 						// Set the ctx for the box
 						ctx.save();
-						
+
 						var itemOrDefault = function(item, defaulVal) {
 							return item !== undefined ? item : defaulVal;
 						};
@@ -2419,16 +2419,16 @@
 						ctx.lineJoin = itemOrDefault(legendItem.lineJoin, Chart.defaults.global.elements.line.borderJoinStyle);
 						ctx.lineWidth = itemOrDefault(legendItem.lineWidth, Chart.defaults.global.elements.line.borderWidth);
 						ctx.strokeStyle = itemOrDefault(legendItem.strokeStyle, Chart.defaults.global.defaultColor);
-						
+
 						if (ctx.setLineDash) {
 							// IE 9 and 10 do not support line dash
 							ctx.setLineDash(itemOrDefault(legendItem.lineDash, Chart.defaults.global.elements.line.borderDash));
 						}
-						
+
 						// Draw the box
 						ctx.strokeRect(cursor.x, cursor.y, this.options.labels.boxWidth, this.options.labels.fontSize);
 						ctx.fillRect(cursor.x, cursor.y, this.options.labels.boxWidth, this.options.labels.fontSize);
-						
+
 						ctx.restore();
 
 						this.legendHitBoxes[i].left = cursor.x;
@@ -2792,7 +2792,7 @@
 					var lastLabelWidth = this.ctx.measureText(this.ticks[this.ticks.length - 1]).width;
 
 					// Ensure that our ticks are always inside the canvas. When rotated, ticks are right aligned which means that the right padding is dominated
-					// by the font height 
+					// by the font height
 					var cosRotation = Math.cos(helpers.toRadians(this.labelRotation));
 					var sinRotation = Math.sin(helpers.toRadians(this.labelRotation));
 					this.paddingLeft = this.labelRotation !== 0 ? (cosRotation * firstLabelWidth) + 3 : firstLabelWidth / 2 + 3; // add 3 px to move away from canvas edges
@@ -2878,7 +2878,7 @@
 		// Used to get data value locations.  Value can either be an index or a numerical value
 		getPixelForValue: helpers.noop,
 
-		// Used for tick location, should 
+		// Used for tick location, should
 		getPixelForTick: function(index, includeOffset) {
 			if (this.isHorizontal()) {
 				var innerWidth = this.width - (this.paddingLeft + this.paddingRight);
@@ -2946,7 +2946,7 @@
 					if (!useAutoskipper) {
 						skipRatio = false;
 					}
-					
+
 					helpers.each(this.ticks, function(label, index) {
 						// Blank ticks
 						if ((skipRatio > 1 && index % skipRatio > 0) || (label === undefined || label === null)) {
@@ -3638,7 +3638,7 @@
 					labelColors: labelColors,
 				});
 
-				// We need to determine alignment of 
+				// We need to determine alignment of
 				var tooltipSize = this.getTooltipSize(this._model);
 				this.determineAlignment(tooltipSize); // Smart Tooltip placement to stay on the canvas
 
@@ -3823,7 +3823,7 @@
 				helpers.each(vm.title, function(title, i) {
 					ctx.fillText(title, pt.x, pt.y);
 					pt.y += vm.titleFontSize + vm.titleSpacing; // Line Height and spacing
-					
+
 					if (i + 1 === vm.title.length) {
 						pt.y += vm.titleMarginBottom - vm.titleSpacing; // If Last, add margin, remove spacing
 					}
@@ -3915,7 +3915,7 @@
 
 				// Draw Caret
 				this.drawCaret(pt, tooltipSize, opacity, caretPadding);
-				
+
 				// Draw Title, Body, and Footer
 				pt.x += vm.xPadding;
 				pt.y += vm.yPadding;
@@ -3970,7 +3970,7 @@
 		initialize: function(chart, datasetIndex) {
 			Chart.DatasetController.prototype.initialize.call(this, chart, datasetIndex);
 
-			// Use this to indicate that this is a bar dataset. 
+			// Use this to indicate that this is a bar dataset.
 			this.getDataset().bar = true;
 		},
 		// Get the number of datasets that display bars. We use this to correctly calculate the bar width
@@ -5094,7 +5094,7 @@
 			var centerX = (this.chart.chartArea.left + this.chart.chartArea.right) / 2;
 			var centerY = (this.chart.chartArea.top + this.chart.chartArea.bottom) / 2;
 
-			// If there is NaN data before us, we need to calculate the starting angle correctly. 
+			// If there is NaN data before us, we need to calculate the starting angle correctly.
 			// We could be way more efficient here, but its unlikely that the polar area chart will have a lot of data
 			var notNullIndex = 0;
 			for (var i = 0; i < index; ++i) {
@@ -5179,7 +5179,7 @@
 			if (isNaN(value)) {
 				return 0;
 			} else {
-				// Count the number of NaN values 
+				// Count the number of NaN values
 				var numNaN = helpers.where(this.getDataset().data, function(data) {
 					return isNaN(data);
 				}).length;
@@ -5599,7 +5599,7 @@
 
 			// Figure out what the max number of ticks we can support it is based on the size of
 			// the axis area. For now, we say that the minimum tick spacing in pixels must be 50
-			// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on 
+			// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on
 			// the graph
 
 			var maxTicks;
@@ -5613,10 +5613,10 @@
 				                    Math.ceil(this.height / (2 * this.options.ticks.fontSize)));
 			}
 
-			// Make sure we always have at least 2 ticks 
+			// Make sure we always have at least 2 ticks
 			maxTicks = Math.max(2, maxTicks);
 
-			// To get a "nice" value for the tick spacing, we will use the appropriately named 
+			// To get a "nice" value for the tick spacing, we will use the appropriately named
 			// "nice number" algorithm. See http://stackoverflow.com/questions/8506881/nice-label-algorithm-for-charts-with-minimum-ticks
 			// for details.
 
@@ -5664,7 +5664,7 @@
 
 		// Utils
 		getPixelForValue: function(value, index, datasetIndex, includeOffset) {
-			// This must be called after fit has been run so that 
+			// This must be called after fit has been run so that
 			//      this.left, this.top, this.right, and this.bottom have been defined
 			var rightValue = +this.getRightValue(value);
 			var pixel;
@@ -5798,7 +5798,7 @@
 
 			// Figure out what the max number of ticks we can support it is based on the size of
 			// the axis area. For now, we say that the minimum tick spacing in pixels must be 50
-			// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on 
+			// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on
 			// the graph
 
 			var tickVal = this.options.ticks.min !== undefined ? this.options.ticks.min : Math.pow(10, Math.floor(helpers.log10(this.min)));
@@ -5995,19 +5995,19 @@
 			}
 		},
 		buildTicks: function() {
-			
+
 
 			this.ticks = [];
 
 			// Figure out what the max number of ticks we can support it is based on the size of
 			// the axis area. For now, we say that the minimum tick spacing in pixels must be 50
-			// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on 
+			// We also limit the maximum number of ticks to 11 which gives a nice 10 squares on
 			// the graph
 			var maxTicks = Math.min(this.options.ticks.maxTicksLimit ? this.options.ticks.maxTicksLimit : 11,
 			                        Math.ceil(this.drawingArea / (1.5 * this.options.ticks.fontSize)));
-			maxTicks = Math.max(2, maxTicks); // Make sure we always have at least 2 ticks 
+			maxTicks = Math.max(2, maxTicks); // Make sure we always have at least 2 ticks
 
-			// To get a "nice" value for the tick spacing, we will use the appropriately named 
+			// To get a "nice" value for the tick spacing, we will use the appropriately named
 			// "nice number" algorithm. See http://stackoverflow.com/questions/8506881/nice-label-algorithm-for-charts-with-minimum-ticks
 			// for details.
 
@@ -6159,9 +6159,9 @@
 		},
 		getDistanceFromCenterForValue: function(value) {
 			if (value === null) {
-				return 0; // null always in center	
-			} 
-			
+				return 0; // null always in center
+			}
+
 			// Take into account half font size + the yPadding of the top value
 			var scalingFactor = this.drawingArea / (this.max - this.min);
 			if (this.options.reverse) {
@@ -6356,7 +6356,7 @@
 				'month': 'MMM YYYY', // Sept 2015
 				'quarter': '[Q]Q - YYYY', // Q3
 				'year': 'YYYY', // 2015
-			}, 
+			},
 		},
 	};
 
@@ -6366,9 +6366,9 @@
 		},
 		determineDataLimits: function() {
 			this.labelMoments = [];
-			
+
 			// Only parse these once. If the dataset does not have data as x,y pairs, we will use
-			// these 
+			// these
 			var scaleLabelMoments = [];
 			if (this.chart.data.labels && this.chart.data.labels.length > 0) {
 				helpers.each(this.chart.data.labels, function(label, index) {
@@ -6425,7 +6425,7 @@
 		buildTicks: function(index) {
 
 			this.ticks = [];
-			this.unitScale = 1; // How much we scale the unit by, ie 2 means 2x unit per step 
+			this.unitScale = 1; // How much we scale the unit by, ie 2 means 2x unit per step
 
 			// Set unit override if applicable
 			if (this.options.time.unit) {
@@ -6446,7 +6446,7 @@
 				var unitDefinitionIndex = 0;
 				var unitDefinition = time.units[unitDefinitionIndex];
 
-				// While we aren't ideal and we don't have units left 
+				// While we aren't ideal and we don't have units left
 				while (unitDefinitionIndex < time.units.length) {
 					// Can we scale this unit. If `false` we can scale infinitely
 					//var canScaleUnit = ;
@@ -6470,7 +6470,7 @@
 						// Move to the next unit up
 						++unitDefinitionIndex;
 						unitDefinition = time.units[unitDefinitionIndex];
-						
+
 						this.tickUnit = unitDefinition.name;
 						this.tickRange = Math.ceil(this.lastTick.diff(this.firstTick, this.tickUnit) + buffer);
 						this.displayFormat = this.options.time.displayFormats[unitDefinition.name];
@@ -6629,7 +6629,7 @@
 				return (betweenAngles && withinRadius);
 			} else {
 				return false;
-			}			
+			}
 		},
 		tooltipPosition: function() {
 			var vm = this._view;
@@ -6706,15 +6706,15 @@
 			var ctx = this._chart.ctx;
 
 			if (point._view.skip) {
-				skipHandler.call(this, previousPoint, point, nextPoint); 
+				skipHandler.call(this, previousPoint, point, nextPoint);
 			} else if (previousPoint._view.skip) {
 				previousSkipHandler.call(this, previousPoint, point, nextPoint);
-			} else if (point._view.tension === 0) { 
+			} else if (point._view.tension === 0) {
 				ctx.lineTo(point._view.x, point._view.y);
 			} else {
 				// Line between points
 				ctx.bezierCurveTo(
-					previousPoint._view.controlPointNextX, 
+					previousPoint._view.controlPointNextX,
 					previousPoint._view.controlPointNextY,
 					point._view.controlPointPreviousX,
 					point._view.controlPointPreviousY,
@@ -7103,7 +7103,7 @@
 
 		return new Chart(context, config);
 	};
-	
+
 }).call(this);
 
 (function() {
@@ -7118,7 +7118,7 @@
 
 		return new Chart(context, config);
 	};
-	
+
 }).call(this);
 
 (function() {
@@ -7133,7 +7133,7 @@
 
 		return new Chart(context, config);
 	};
-	
+
 }).call(this);
 
 (function() {
@@ -7153,7 +7153,7 @@
 
 		return new Chart(context, config);
 	};
-	
+
 }).call(this);
 
 (function() {
@@ -7204,7 +7204,7 @@
 		config.type = 'scatter';
 		return new Chart(context, config);
 	};
-	
+
 }).call(this);
 return Chart;
 }));

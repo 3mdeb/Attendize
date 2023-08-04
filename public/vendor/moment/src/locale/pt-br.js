@@ -49,4 +49,3 @@ export default moment.defineLocale('pt-br', {
     ordinalParse: /\d{1,2}º/,
     ordinal : '%dº'
 });
-

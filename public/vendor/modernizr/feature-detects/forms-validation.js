@@ -1,6 +1,6 @@
 // This implementation only tests support for interactive form validation.
 // To check validation for a specific type or a specific other constraint,
-// the test can be combined: 
+// the test can be combined:
 //    - Modernizr.inputtypes.numer && Modernizr.formvalidation (browser supports rangeOverflow, typeMismatch etc. for type=number)
 //    - Modernizr.input.required && Modernizr.formvalidation (browser supports valueMissing)
 //

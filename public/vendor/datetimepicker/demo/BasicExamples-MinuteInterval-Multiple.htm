@@ -3,26 +3,26 @@
 <html>
 
 	<head>
-	
+
 		<title>Minute Intervals - Multiple</title>
-	
+
 		<link rel="stylesheet" type="text/css" href="../src/DateTimePicker.css" />
-	
+
 		<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="../src/DateTimePicker.js"></script>
-	
+
 		<!--[if lt IE 9]>
 			<link rel="stylesheet" type="text/css" href="../src/DateTimePicker-ltie9.css" />
 			<script type="text/javascript" src="../src/DateTimePicker-ltie9.js"></script>
 		<![endif]-->
-		
+
 		<style type="text/css">
-		
+
 			p
 			{
 				margin-left: 20px;
 			}
-		
+
 			input
 			{
 				width: 200px;
@@ -30,13 +30,13 @@
 				margin-left: 20px;
 				margin-bottom: 20px;
 			}
-		
+
 		</style>
-	
+
 	</head>
 
 	<body>
-	
+
 		<div class="minutes-1">
 		    <p>Time : (1 minute)</p>
 		    <input id="input-1" type="text" data-field="time" readonly>
@@ -50,9 +50,9 @@
 		<div id="dtBox-1"></div>
 
 		<div id="dtBox-2"></div>
-	
+
 		<script type="text/javascript">
-		
+
 			$(document).ready(function()
 			{
 			    $("#dtBox-1").DateTimePicker(
@@ -67,9 +67,9 @@
 			        minuteInterval: 5
 			    });
 			});
-		
+
 		</script>
-	
+
 	</body>
 
 </html>

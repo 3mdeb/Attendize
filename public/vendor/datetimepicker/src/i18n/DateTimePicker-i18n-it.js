@@ -1,4 +1,4 @@
-/* ----------------------------------------------------------------------------- 
+/* -----------------------------------------------------------------------------
 
   jQuery DateTimePicker - Responsive flat design jQuery DateTime Picker plugin for Web & Mobile
   Version 0.1.38
@@ -20,7 +20,7 @@
 
 (function ($) {
     $.DateTimePicker.i18n["it"] = $.extend($.DateTimePicker.i18n["it"], {
-        
+
     	language: "it",
 
     	dateTimeFormat: "dd-MM-yyyy HH:mm",
@@ -35,9 +35,9 @@
 		titleContentDate: "Imposta Data",
 		titleContentTime: "Imposta Ora",
 		titleContentDateTime: "Imposta Data & Ora",
-	
+
 		setButtonContent: "Imposta",
 		clearButtonContent: "Pulisci"
-        
+
     });
 })(jQuery);

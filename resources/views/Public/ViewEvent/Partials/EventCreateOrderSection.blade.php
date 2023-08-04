@@ -227,4 +227,3 @@
 @if(session()->get('message'))
     <script>showMessage('{{session()->get('message')}}');</script>
 @endif
-

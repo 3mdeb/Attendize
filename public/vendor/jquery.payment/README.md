@@ -1,31 +1,41 @@
 # jQuery.payment [![Build Status](https://travis-ci.org/stripe/jquery.payment.svg?branch=master)](https://travis-ci.org/stripe/jquery.payment)
 
-A general purpose library for building credit card forms, validating inputs and formatting numbers.
+A general purpose library for building credit card forms, validating inputs and
+formatting numbers.
 
 ## Project status
 
-We consider `jQuery.payment` to be feature complete. We continue to use it in production, and we will happily accept bug reports and pull requests fixing those bugs, but we will not be adding new features or modifying the project for new frameworks or build systems.
+We consider `jQuery.payment` to be feature complete. We continue to use it in
+production, and we will happily accept bug reports and pull requests fixing
+those bugs, but we will not be adding new features or modifying the project for
+new frameworks or build systems.
 
 ### Why?
 
-The library was born in a different age, and we think it has served tremendously, but it is fundamentally doing too many things. Complecting DOM element manipulation, input masking, card formatting, and cursor positioning makes it difficult to test and modify. An ideal version of this library would separate the independent components and make the internal logic functional.
+The library was born in a different age, and we think it has served
+tremendously, but it is fundamentally doing too many things. Complecting DOM
+element manipulation, input masking, card formatting, and cursor positioning
+makes it difficult to test and modify. An ideal version of this library would
+separate the independent components and make the internal logic functional.
 
 ## Usage
 
-You can make an input act like a credit card field (with number formatting and length restriction):
+You can make an input act like a credit card field (with number formatting and
+length restriction):
 
-``` javascript
-$('input.cc-num').payment('formatCardNumber');
+```javascript
+$("input.cc-num").payment("formatCardNumber");
 ```
 
-Then, when the payment form is submitted, you can validate the card number on the client-side:
+Then, when the payment form is submitted, you can validate the card number on
+the client-side:
 
-``` javascript
-var valid = $.payment.validateCardNumber($('input.cc-num').val());
+```javascript
+var valid = $.payment.validateCardNumber($("input.cc-num").val());
 
 if (!valid) {
-  alert('Your card is not valid!');
-  return false;
+    alert("Your card is not valid!");
+    return false;
 }
 ```
 
@@ -33,20 +43,21 @@ You can find a full [demo here](http://stripe.github.io/jquery.payment/example).
 
 Supported card types are:
 
-* Visa
-* MasterCard
-* American Express
-* Diners Club
-* Discover
-* UnionPay
-* JCB
-* Visa Electron
-* Maestro
-* Forbrugsforeningen
-* Dankort
-* Elo
+- Visa
+- MasterCard
+- American Express
+- Diners Club
+- Discover
+- UnionPay
+- JCB
+- Visa Electron
+- Maestro
+- Forbrugsforeningen
+- Dankort
+- Elo
 
-(Additional card types are supported by extending the [`$.payment.cards`](#paymentcards) array.)
+(Additional card types are supported by extending the
+[`$.payment.cards`](#paymentcards) array.)
 
 ## API
 
@@ -54,43 +65,43 @@ Supported card types are:
 
 Formats card numbers:
 
-* Includes a space between every 4 digits
-* Restricts input to numbers
-* Limits to 16 numbers
-* Supports American Express formatting
-* Adds a class of the card type (e.g. 'visa') to the input
+- Includes a space between every 4 digits
+- Restricts input to numbers
+- Limits to 16 numbers
+- Supports American Express formatting
+- Adds a class of the card type (e.g. 'visa') to the input
 
 Example:
 
-``` javascript
-$('input.cc-num').payment('formatCardNumber');
+```javascript
+$("input.cc-num").payment("formatCardNumber");
 ```
 
 ### $.fn.payment('formatCardExpiry')
 
 Formats card expiry:
 
-* Includes a `/` between the month and year
-* Restricts input to numbers
-* Restricts length
+- Includes a `/` between the month and year
+- Restricts input to numbers
+- Restricts length
 
 Example:
 
-``` javascript
-$('input.cc-exp').payment('formatCardExpiry');
+```javascript
+$("input.cc-exp").payment("formatCardExpiry");
 ```
 
 ### $.fn.payment('formatCardCVC')
 
 Formats card CVC:
 
-* Restricts length to 4 numbers
-* Restricts input to numbers
+- Restricts length to 4 numbers
+- Restricts input to numbers
 
 Example:
 
-``` javascript
-$('input.cc-cvc').payment('formatCardCVC');
+```javascript
+$("input.cc-cvc").payment("formatCardCVC");
 ```
 
 ### $.fn.payment('restrictNumeric')
@@ -99,98 +110,102 @@ General numeric input restriction.
 
 Example:
 
-``` javascript
-$('[data-numeric]').payment('restrictNumeric');
+```javascript
+$("[data-numeric]").payment("restrictNumeric");
 ```
 
 ### $.payment.validateCardNumber(number)
 
 Validates a card number:
 
-* Validates numbers
-* Validates Luhn algorithm
-* Validates length
+- Validates numbers
+- Validates Luhn algorithm
+- Validates length
 
 Example:
 
-``` javascript
-$.payment.validateCardNumber('4242 4242 4242 4242'); //=> true
+```javascript
+$.payment.validateCardNumber("4242 4242 4242 4242"); //=> true
 ```
 
 ### $.payment.validateCardExpiry(month, year)
 
 Validates a card expiry:
 
-* Validates numbers
-* Validates in the future
-* Supports year shorthand
+- Validates numbers
+- Validates in the future
+- Supports year shorthand
 
 Example:
 
-``` javascript
-$.payment.validateCardExpiry('05', '20'); //=> true
-$.payment.validateCardExpiry('05', '2015'); //=> true
-$.payment.validateCardExpiry('05', '05'); //=> false
+```javascript
+$.payment.validateCardExpiry("05", "20"); //=> true
+$.payment.validateCardExpiry("05", "2015"); //=> true
+$.payment.validateCardExpiry("05", "05"); //=> false
 ```
 
 ### $.payment.validateCardCVC(cvc, type)
 
 Validates a card CVC:
 
-* Validates number
-* Validates length to 4
+- Validates number
+- Validates length to 4
 
 Example:
 
-``` javascript
-$.payment.validateCardCVC('123'); //=> true
-$.payment.validateCardCVC('123', 'amex'); //=> true
-$.payment.validateCardCVC('1234', 'amex'); //=> true
-$.payment.validateCardCVC('12344'); //=> false
+```javascript
+$.payment.validateCardCVC("123"); //=> true
+$.payment.validateCardCVC("123", "amex"); //=> true
+$.payment.validateCardCVC("1234", "amex"); //=> true
+$.payment.validateCardCVC("12344"); //=> false
 ```
 
 ### $.payment.cardType(number)
 
 Returns a card type. Either:
 
-* `visa`
-* `mastercard`
-* `amex`
-* `dinersclub`
-* `discover`
-* `unionpay`
-* `jcb`
-* `visaelectron`
-* `maestro`
-* `forbrugsforeningen`
-* `dankort`
-* `elo`
+- `visa`
+- `mastercard`
+- `amex`
+- `dinersclub`
+- `discover`
+- `unionpay`
+- `jcb`
+- `visaelectron`
+- `maestro`
+- `forbrugsforeningen`
+- `dankort`
+- `elo`
 
 The function will return `null` if the card type can't be determined.
 
 Example:
 
-``` javascript
-$.payment.cardType('4242 4242 4242 4242'); //=> 'visa'
+```javascript
+$.payment.cardType("4242 4242 4242 4242"); //=> 'visa'
 ```
 
 ### $.payment.cardExpiryVal(string) and $.fn.payment('cardExpiryVal')
 
-Parses a credit card expiry in the form of MM/YYYY, returning an object containing the `month` and `year`. Shorthand years, such as `13` are also supported (and converted into the longhand, e.g. `2013`).
+Parses a credit card expiry in the form of MM/YYYY, returning an object
+containing the `month` and `year`. Shorthand years, such as `13` are also
+supported (and converted into the longhand, e.g. `2013`).
 
-``` javascript
-$.payment.cardExpiryVal('03 / 2025'); //=> {month: 3, year: 2025}
-$.payment.cardExpiryVal('05 / 04'); //=> {month: 5, year: 2004}
-$('input.cc-exp').payment('cardExpiryVal') //=> {month: 4, year: 2020}
+```javascript
+$.payment.cardExpiryVal("03 / 2025"); //=> {month: 3, year: 2025}
+$.payment.cardExpiryVal("05 / 04"); //=> {month: 5, year: 2004}
+$("input.cc-exp").payment("cardExpiryVal"); //=> {month: 4, year: 2020}
 ```
 
-This function doesn't perform any validation of the month or year; use `$.payment.validateCardExpiry(month, year)` for that.
+This function doesn't perform any validation of the month or year; use
+`$.payment.validateCardExpiry(month, year)` for that.
 
 ### $.payment.cards
 
-Array of objects that describe valid card types. Each object should contain the following fields:
+Array of objects that describe valid card types. Each object should contain the
+following fields:
 
-``` javascript
+```javascript
 {
   // Card type, as returned by $.payment.cardType.
   type: 'mastercard',
@@ -210,7 +225,9 @@ Array of objects that describe valid card types. Each object should contain the 
 }
 ```
 
-When identifying a card type, the array is traversed in order until the card number matches a prefix in `patterns`. For this reason, patterns with higher specificity should appear towards the beginning of the array.
+When identifying a card type, the array is traversed in order until the card
+number matches a prefix in `patterns`. For this reason, patterns with higher
+specificity should appear towards the beginning of the array.
 
 ## Example
 
@@ -226,22 +243,27 @@ Run `cake test`
 
 ## Autocomplete recommendations
 
-We recommend you turn autocomplete on for credit card forms, *except for the CVC field (which should never be stored)*. You can do this by setting the `autocomplete` attribute:
+We recommend you turn autocomplete on for credit card forms, _except for the CVC
+field (which should never be stored)_. You can do this by setting the
+`autocomplete` attribute:
 
-``` html
+```html
 <form autocomplete="on">
-  <input class="cc-number" autocomplete="cc-number">
-  <input class="cc-exp" autocomplete="cc-exp">
-  <input class="cc-cvc" autocomplete="off">
+    <input class="cc-number" autocomplete="cc-number" />
+    <input class="cc-exp" autocomplete="cc-exp" />
+    <input class="cc-cvc" autocomplete="off" />
 </form>
 ```
 
-You should mark up your fields using the [Autofill spec](https://html.spec.whatwg.org/multipage/forms.html#autofill). These are respected by a number of browsers, including Chrome, Safari, Firefox.
+You should mark up your fields using the
+[Autofill spec](https://html.spec.whatwg.org/multipage/forms.html#autofill).
+These are respected by a number of browsers, including Chrome, Safari, Firefox.
 
 ## Mobile recommendations
 
-We recommend you to use `<input type="tel">` which will cause the numeric keyboard to be displayed on mobile devices:
+We recommend you to use `<input type="tel">` which will cause the numeric
+keyboard to be displayed on mobile devices:
 
-``` html
-<input type="tel" class="cc-number">
+```html
+<input type="tel" class="cc-number" />
 ```

@@ -98,4 +98,3 @@ export default moment.defineLocale('sr-cyrl', {
         doy : 7  // The week that contains Jan 1st is the first week of the year.
     }
 });
-

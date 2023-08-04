@@ -35,7 +35,7 @@ class RetrofitFixScriptForStats extends Migration
                 return ($mapOrderItemTitles->contains($ticket->title));
             });
 
-            // Attach the ticket to it's order to keep referencial integrity
+            // Attach the ticket to it's order to keep referential integrity
             $ticketsFound->map(function($ticket) use ($order) {
                 $pivotExists = $order->tickets()->where('ticket_id', $ticket->id)->exists();
                 if (!$pivotExists) {

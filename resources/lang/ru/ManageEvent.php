@@ -96,7 +96,7 @@ return array (
   'ticket_title_placeholder' => 'например: семейный',
   'update_order' => 'Обновить заказ',
   'widgets' => 'Виджеты',
-  'LLH:obsolete' => 
+  'LLH:obsolete' =>
   array (
     'create_question' => 'Создать вопрос',
   ),
