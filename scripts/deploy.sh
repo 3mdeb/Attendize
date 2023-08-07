@@ -65,5 +65,6 @@ EOF
     if [[ $result == *"Deploying the site"* ]]; then
         make deploy
     else
+        echo "No new changes. Site will not be deployed."
         chown -R systemd-resolve:systemd-journal .
     fi
