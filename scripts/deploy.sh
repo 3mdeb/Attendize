@@ -66,5 +66,5 @@ EOF
         make deploy
     else
         echo "No new changes. Site will not be deployed."
-        chown -R systemd-resolve:systemd-journal .
+        chown -R $OWNER:$GROUP .
     fi
