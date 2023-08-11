@@ -16,7 +16,7 @@ jobs:
         with:
           fail: true
           args: |
-            -a 403,429,500,502,503 https://vpub.dasharo.com
+            --timeout 60 -a 403,429,500,502,503,504 https://vpub.dasharo.com
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != 0
