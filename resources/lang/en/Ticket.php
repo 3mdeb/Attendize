@@ -23,7 +23,7 @@ return array (
   'end_date_time' => 'End Date / Time',
   'event' => 'Event',
   'event_tickets' => 'Event Tickets',
-  'footer' => 'Entry ticket looses it\'s validity the moment venue is left and re-entry during event is not permitted.',
+  'footer' => 'The ticket is valid for the entire duration of the event.',
   'n_tickets' => ':num tickets',
   'name' => 'Name',
   'no_tickets_yet' => 'No Tickets Yet',
