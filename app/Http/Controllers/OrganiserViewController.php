@@ -47,14 +47,14 @@ class OrganiserViewController extends Controller
         $past_events = $organiser->events()->where([
             ['end_date', '<', now()],
             ['is_live', 1]
-        ])->limit(10)->get();
+        ])->get();
 
         $data = [
             'organiser'       => $organiser,
             'tickets'         => $organiser->events()->orderBy('created_at', 'desc')->get(),
             'is_embedded'     => 0,
-            'upcoming_events' => $upcoming_events,
-            'past_events'     => $past_events,
+            'upcoming_events' => $upcoming_events->sortBy('start_date'),
+            'past_events'     => $past_events->sortBy('start_date')->reverse(),
         ];
 
         return view('Public.ViewOrganiser.OrganiserPage', $data);
