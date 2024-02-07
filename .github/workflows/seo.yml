@@ -9,21 +9,11 @@ jobs:
   linkChecker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Link Checker
-        id: lychee
-        uses: lycheeverse/lychee-action@v1.8.0
-        with:
-          fail: true
-          args: |
-            --timeout 60 -a 403,429,500,502,503,504 https://vpub.dasharo.com
+      - name: Checkout repo
+        uses: actions/checkout@v4.1.1
 
-      - name: Create Issue From File
-        if: steps.lychee.outputs.exit_code != 0
-        uses: peter-evans/create-issue-from-file@v4
-        with:
-          title: Link Checker Report
-          content-filepath: ./lychee/out.md
+      - name: Test links
+        uses: 3mdeb/lychee-log-action@main
 
   seo_spy_orphan_pages:
     runs-on: ubuntu-latest
