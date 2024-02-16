@@ -77,6 +77,7 @@ return [
     'register' => 'Registrati',
     'sales_have_ended' => 'La vendita si è conclusa',
     'sales_have_not_started' => 'La vendita non è ancora cominciata',
+    'schedule' => 'Programma dell\'evento',
     'send_message_submit' => 'Invia messaggio',
     'share_event' => 'Condividi l\'evento',
     'sold_out' => 'Esaurito',

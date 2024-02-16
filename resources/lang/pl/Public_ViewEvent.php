@@ -65,6 +65,7 @@ return [
   'register' => 'Rezerwuj',
   'sales_have_ended' => 'Sprzedaż się zakończyła',
   'sales_have_not_started' => 'Sprzedaż się jeszcze nie rozpoczęła',
+  'schedule' => 'Haromnogram wydarzenia',
   'send_message_submit' => 'Wyślij wiadomość',
   'share_event' => 'Udostępnij',
   'sold_out' => 'Wyprzedano',

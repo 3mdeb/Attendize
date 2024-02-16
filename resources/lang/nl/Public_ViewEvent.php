@@ -67,6 +67,7 @@ return [
   'register' => 'Registreren',
   'sales_have_ended' => 'Verkopen beëindigd',
   'sales_have_not_started' => 'Verkopen nog niet gestart',
+  'schedule' => 'Evenement Schedule',
   'send_message_submit' => 'Bericht versturen',
   'share_event' => 'Deel evenement',
   'sold_out' => 'Uitverkocht',

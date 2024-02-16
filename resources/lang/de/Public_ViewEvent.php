@@ -68,6 +68,7 @@ return array (
   'register' => 'Registrieren',
   'sales_have_ended' => 'Der Verkauf ist beendet',
   'sales_have_not_started' => 'Der Verkauf hat noch nicht begonnen',
+  'schedule' => 'Event Zeitplan',
   'send_message_submit' => 'Nachricht senden',
   'share_event' => 'Event teilen',
   'sold_out' => 'Ausverkauft',

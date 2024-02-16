@@ -66,6 +66,7 @@ return [
     'register'                          => '購入に進む',
     'sales_have_ended'                  => '売上が終了しました',
     'sales_have_not_started'            => '販売が開始されていません',
+    'schedule'                          => 'イベントスケジュール',
     'send_message_submit'               => 'メッセージを送る',
     'share_event'                       => 'イベントの共有',
     'sold_out'                          => '売り切れ',

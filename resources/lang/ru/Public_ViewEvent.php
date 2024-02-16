@@ -75,6 +75,7 @@ return [
     'register'                          => 'Регистрация',
     'sales_have_ended'                  => 'Продажи закончились',
     'sales_have_not_started'            => 'Продажи не начались',
+    'schedule'                          => 'Расписание мероприятий',
     'send_message_submit'               => 'Послать сообщение',
     'share_event'                       => 'Поделиться мероприятием',
     'sold_out'                          => 'Все билеты проданы',
