@@ -40,6 +40,8 @@ return array (
   'promote_event' => 'Promoot Evenement',
   'revenue' => 'Omzet',
   'save_changes' => 'Wijzigingen opslaan',
+  'schedule_url' => 'URL Agenda',
+  'schedule_url_placeholder' => 'https://cfp.3mdeb.com/event_url/',
   'showing_num_of_orders' => 'Bekijk bestelling :0 van de :1 bestellingen in totaal',
   'tickets_sold' => 'Tickets verkocht',
   'venue_name' => 'Naam Locatie',

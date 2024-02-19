@@ -27,6 +27,15 @@
         </div>
 
         <div class="form-group">
+                {!! Form::label('schedule_url', trans("Event.schedule_url"), array('class'=>'control-label')) !!}
+                {!!  Form::text('schedule_url', old('schedule_url'),
+                                            array(
+                                            'class'=>'form-control',
+                                            'placeholder'=>trans("Event.schedule_url_placeholder")
+                                            ))  !!}
+        </div>
+
+        <div class="form-group">
            {!! Form::label('description', trans("Event.event_description"), array('class'=>'control-label')) !!}
             {!!  Form::textarea('description', old('description'),
                                         array(

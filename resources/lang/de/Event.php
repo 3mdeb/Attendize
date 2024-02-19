@@ -37,6 +37,8 @@ return array (
   'promote_event' => 'Veranstaltung Bewerben',
   'revenue' => 'Einnahmen',
   'save_changes' => 'Änderungen speichern',
+  'schedule_url' => 'Zeitplan URL',
+  'schedule_url_placeholder' => 'https://cfp.3mdeb.com/event_url/',
   'showing_num_of_orders' => 'Zeige :0 Bestellungen von :1 Bestellungen',
   'tickets_sold' => 'Tickets Verkauft',
   'venue_name' => 'Name des Veranstaltungsortes',

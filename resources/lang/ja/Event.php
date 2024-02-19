@@ -35,6 +35,8 @@ return array(
     'promote_event'              => 'イベントの宣伝',
     'revenue'                    => '収益',
     'save_changes'               => '変更を保存',
+    'schedule_url'               => 'スケジュールURL',
+    'schedule_url_placeholder'   => 'https://cfp.3mdeb.com/event_url/',
     'showing_num_of_orders'      => '表示中:0合計:1合計',
     'tickets_sold'               => 'チケット販売',
     'venue_name'                 => '会場名',

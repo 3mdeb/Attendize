@@ -46,6 +46,8 @@ return array (
   'promote_event' => 'Продвижение мероприятия',
   'revenue' => 'Доход',
   'save_changes' => 'Сохранить изменения',
+  'schedule_url' => 'URL расписания',
+  'schedule_url_placeholder' => 'https://cfp.3mdeb.com/event_url/',
   'showing_num_of_orders' => 'Показано :0 заказов, всего :1',
   'tickets_sold' => 'Билеты проданы',
   'venue_name' => 'Название места проведения мероприятия',
