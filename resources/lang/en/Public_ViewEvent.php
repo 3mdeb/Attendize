@@ -76,6 +76,7 @@ return [
     'register'                          => 'Register',
     'sales_have_ended'                  => 'Sales Have Ended',
     'sales_have_not_started'            => 'Sales Have Not Started',
+    'schedule'                          => 'Event Schedule',
     'send_message_submit'               => 'Send message',
     'share_event'                       => 'Share Event',
     'sold_out'                          => 'Sold Out',

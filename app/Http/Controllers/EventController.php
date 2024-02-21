@@ -225,6 +225,7 @@ class EventController extends MyBaseController
         $event->currency_id = $request->get('currency_id');
         $event->title = $request->get('title');
         $event->description = prepare_markdown($request->get('description'));
+        $event->schedule_url = $request->get('schedule_url');
         $event->start_date = $request->get('start_date');
         $event->google_tag_manager_code = $request->get('google_tag_manager_code');
 

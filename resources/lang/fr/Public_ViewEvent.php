@@ -70,6 +70,7 @@ return array (
   'register' => 'Enregistrer',
   'sales_have_ended' => 'Les ventes sont terminées',
   'sales_have_not_started' => 'Les ventes n\'ont pas commencé',
+  'schedule' => 'Programme de l\'événement',
   'send_message_submit' => 'Envoyer message',
   'share_event' => 'Partager l\'événement',
   'sold_out' => 'Vendu',

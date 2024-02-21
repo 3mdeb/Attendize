@@ -10,6 +10,7 @@ $factory->define(App\Models\Event::class, function (Faker\Generator $faker) {
         'bg_color' => config('attendize.event_default_bg_color'),
         'bg_image_path' => $faker->imageUrl,
         'description' => $faker->text,
+        'schedule_url' => $faker->url,
         'start_date' => Carbon::now()->format(config('attendize.default_datetime_format')),
         'end_date' => Carbon::now()->addWeek()->format(config('attendize.default_datetime_format')),
         'on_sale_date' => Carbon::now()->subDays(20)->format(config('attendize.default_datetime_format')),
